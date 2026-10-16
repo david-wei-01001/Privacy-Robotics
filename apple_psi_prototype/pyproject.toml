@@ -1,0 +1,14 @@
+[project]
+name = "apple-psi-prototype"
+version = "0.1.0"
+description = "Educational Python prototype of the Apple PSI (ftPSI-AD) protocol from Bhowmick, Boneh, Myers, Talwar, Tarbe (2021)"
+requires-python = ">=3.9"
+dependencies = ["cryptography>=41", "numpy>=1.24", "Pillow>=9.1"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+digits = ["scikit-learn"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
