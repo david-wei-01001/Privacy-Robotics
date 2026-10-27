@@ -1,5 +1,0 @@
-cryptography>=41
-numpy>=1.24
-Pillow>=9.1
-pytest>=7          # tests only
-scikit-learn       # optional: only for the offline --dataset digits option
