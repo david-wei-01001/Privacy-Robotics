@@ -1,0 +1,32 @@
+# Night-1 pilot (PLAN §9.2): bash tools/night.sh <night_id>; smoke test: python -m mmpsi.pilot --night smoke1 --smoke
+# The FMR targets (1% and 0.1%) are fixed in mmpsi/evaluate.py (FMRS); they are defaults until decided (PLAN §11).
+window_s: 4.8
+hop_s: 2.4
+xd:
+  locked_test_frac: 0.4          # share of source groups (movie / YouTube id) set aside, untouched, as the locked test
+  themes: [fighting, abuse]      # default until decided (PLAN §11, item 3)
+  max_violent: 150
+  max_normal: 100
+sins:
+  archives: [1, 2]
+  max_files: 7000
+tv_mix:
+  n: 300
+  snr_db: [-10, 0]               # level of the violent audio relative to the room recording
+encoders: [mfcc_stats, vggish, hubert, ast, clap, clip_frames]
+matchers:
+  - {name: cosine_top1}
+  - {name: cosine_top5}
+  - {name: l2_raw}
+  - {name: hamming_sign}
+  - {name: logreg}
+  - {name: lsh, k: 8, L: 8}
+  - {name: lsh, k: 8, L: 16}
+  - {name: lsh, k: 12, L: 8}
+  - {name: lsh, k: 12, L: 16}
+  - {name: lsh, k: 16, L: 8}
+  - {name: lsh, k: 16, L: 16}
+budget:
+  extract_s: 14400               # embedding extraction, all encoders together
+  probe_windows: 24              # windows per encoder in the timing probe
+  psi_windows: 150               # windows sent through the Apple PSI prototype

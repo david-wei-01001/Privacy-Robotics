@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "night": "smoke1",
+    "plan_version": "0.6",
+    "git": "68a5776+dirty",
+    "smoke": true,
+    "code_hash": "fba16e0fca",
+    "code_copy": "runs/smoke1/code/",
+    "config": {
+      "window_s": 4.8,
+      "hop_s": 2.4,
+      "xd": {
+        "locked_test_frac": 0.4,
+        "themes": [
+          "fighting",
+          "abuse"
+        ],
+        "max_violent": 6,
+        "max_normal": 4
+      },
+      "sins": {
+        "archives": [
+          1,
+          2
+        ],
+        "max_files": 120
+      },
+      "tv_mix": {
+        "n": 12,
+        "snr_db": [
+          -10,
+          0
+        ]
+      },
+      "encoders": [
+        "mfcc_stats",
+        "vggish",
+        "hubert",
+        "ast",
+        "clap",
+        "clip_frames"
+      ],
+      "matchers": [
+        {
+          "name": "cosine_top1"
+        },
+        {
+          "name": "cosine_top5"
+        },
+        {
+          "name": "l2_raw"
+        },
+        {
+          "name": "hamming_sign"
+        },
+        {
+          "name": "logreg"
+        },
+        {
+          "name": "lsh",
+          "k": 8,
+          "L": 8
+        },
+        {
+          "name": "lsh",
+          "k": 8,
+          "L": 16
+        },
+        {
+          "name": "lsh",
+          "k": 12,
+          "L": 8
+        },
+        {
+          "name": "lsh",
+          "k": 12,
+          "L": 16
+        },
+        {
+          "name": "lsh",
+          "k": 16,
+          "L": 8
+        },
+        {
+          "name": "lsh",
+          "k": 16,
+          "L": 16
+        }
+      ],
+      "budget": {
+        "extract_s": 900,
+        "probe_windows": 8,
+        "psi_windows": 150
+      }
+    },
+    "config_hash": "3e1a383c24",
+    "started": "2026-10-27 02:19",
+    "finished": "2026-10-27 02:20",
+    "minutes": 0.3
+  },
+  "stages": {
+    "data": {
+      "status": "ok",
+      "start": 1793081995.609659,
+      "seconds": 0.0,
+      "windows": 792,
+      "file": "/Users/elise./Desktop/Research-Projects.nosync/[2229] Robotics Privacy/privacy-robotics/data/derived/windows_e28a580bf4.csv"
+    },
+    "probe": {
+      "status": "ok",
+      "start": 1793081995.618161,
+      "seconds": 9.3,
+      "encoders": [
+        "mfcc_stats",
+        "vggish",
+        "hubert",
+        "ast",
+        "clap",
+        "clip_frames"
+      ]
+    },
+    "encoder:mfcc_stats": {
+      "status": "ok",
+      "start": 1793082004.95355,
+      "seconds": 0.0,
+      "windows": 792,
+      "coverage": 1.0,
+      "note": "cached"
+    },
+    "encoder:clip_frames": {
+      "status": "ok",
+      "start": 1793082004.954402,
+      "seconds": 0.0,
+      "windows": 420,
+      "coverage": 1.0,
+      "note": "cached"
+    },
+    "encoder:clap": {
+      "status": "ok",
+      "start": 1793082004.955372,
+      "seconds": 0.0,
+      "windows": 792,
+      "coverage": 1.0,
+      "note": "cached"
+    },
+    "encoder:vggish": {
+      "status": "ok",
+      "start": 1793082004.9562838,
+      "seconds": 0.0,
+      "windows": 792,
+      "coverage": 1.0,
+      "note": "cached"
+    },
+    "encoder:hubert": {
+      "status": "ok",
+      "start": 1793082004.9569468,
+      "seconds": 0.0,
+      "windows": 792,
+      "coverage": 1.0,
+      "note": "cached"
+    },
+    "encoder:ast": {
+      "status": "ok",
+      "start": 1793082004.958115,
+      "seconds": 0.0,
+      "windows": 792,
+      "coverage": 1.0,
+      "note": "cached"
+    },
+    "evaluate": {
+      "status": "ok",
+      "start": 1793082004.9590988,
+      "seconds": 0.5,
+      "runs": 250
+    },
+    "datasets": {
+      "status": "ok",
+      "start": 1793082005.4337459,
+      "seconds": 0.0,
+      "encoder": "mfcc_stats"
+    },
+    "apple_psi": {
+      "status": "ok",
+      "start": 1793082005.444756,
+      "seconds": 7.0,
+      "encoder": "mfcc_stats",
+      "lsh_run_id": "smoke1-0011",
+      "k": 8,
+      "L": 8,
+      "m": 8,
+      "n_windows": 121,
+      "n_plain_positive": 21,
+      "n_items_X": 46,
+      "cuckoo_dropped": 0,
+      "equivalence_rate": 1.0,
+      "n_disagree": 0,
+      "n_disagree_explained_by_drops": 0,
+      "voucher_bytes": 412,
+      "setup_s": 0.12,
+      "client_ms_per_voucher": 5.35,
+      "server_ms_per_voucher": 1.69,
+      "pdata_bytes": 3886
+    },
+    "report": {
+      "status": "ok",
+      "start": 1793082012.408097,
+      "seconds": 0.0
+    }
+  },
+  "n_runs": 250
+}
