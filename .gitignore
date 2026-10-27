@@ -1,0 +1,13 @@
+.DS_Store
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+*.egg-info/
+data/
+*.npy
+*.npz
+# run records keep their ROC scores, so that --report-only can redraw the ROC figure (PLAN §13.2)
+!runs/*/roc.npz
+*.wav
+*.mp4

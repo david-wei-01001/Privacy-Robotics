@@ -1,0 +1,9 @@
+#!/bin/sh
+# PLAN §13.3: plan changes need a CHANGELOG entry; results.tsv is append-only.
+python3 tools/plan_log.py check || exit 1
+if git diff --cached --name-only | grep -q '^autoresearch/results.tsv$' && git cat-file -e HEAD:autoresearch/results.tsv 2>/dev/null; then
+  old=$(git show HEAD:autoresearch/results.tsv | wc -c)
+  if [ "$(git show :autoresearch/results.tsv | head -c "$old")" != "$(git show HEAD:autoresearch/results.tsv)" ]; then
+    echo "results.tsv is append-only: earlier rows were changed"; exit 1
+  fi
+fi

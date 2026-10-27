@@ -1,0 +1,5 @@
+#!/bin/sh
+# PLAN §13.3: changes to the frozen evaluation code must cite a decision record (e.g. "ADR-0007").
+if git diff --cached --name-only | grep -q '^mmpsi/eval/'; then
+  grep -q 'ADR-[0-9]\{4\}' "$1" || { echo "mmpsi/eval/ changed: cite a decision record (ADR-NNNN) in the message"; exit 1; }
+fi

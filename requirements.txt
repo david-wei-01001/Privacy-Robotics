@@ -1,0 +1,30 @@
+# Python 3.12. Versions as in the .venv that ran Night 1 (2026-10-27_n1). From the repository root:
+#   uv venv --python 3.12 .venv && uv pip install --python .venv/bin/python -r requirements.txt
+-e ./apple_psi_prototype
+
+# data, audio, and video
+numpy==2.5.4
+scipy==1.18.1
+pandas==3.1.0
+pyarrow==26.0.0
+pyyaml==6.0.3
+soundfile==0.14.0
+librosa==1.0.0
+resampy==0.4.3            # used by torchvggish, which torch.hub loads at run time
+av==19.0.2                # PyAV: decodes XD-Violence audio and keyframes, so no system ffmpeg is needed
+
+# encoders
+torch==2.14.1
+torchaudio==2.11.0        # transformers uses it for the AST filterbank features when installed
+transformers==5.21.0
+huggingface-hub==2.3.0
+safetensors==0.8.0
+
+# matching, reports, PSI prototype, tests
+scikit-learn==1.9.1
+matplotlib==3.11.2
+tqdm==4.70.1
+tabulate==0.10.0
+cryptography==50.0.2
+pillow==13.0.0
+pytest==9.1.1

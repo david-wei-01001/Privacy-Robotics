@@ -1,0 +1,5 @@
+# Large files (data, caches, model weights, logs) live in data/ inside the repo, which git ignores. The project
+# folder is under ~/Desktop/Research-Projects.nosync, which iCloud does not sync (PLAN §13, ADR 0007).
+# A relative data_root is resolved against the repo root.
+data_root: data
+python: .venv/bin/python
