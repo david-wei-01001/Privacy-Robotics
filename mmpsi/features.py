@@ -14,6 +14,8 @@ from .data import SR, _h
 
 def _device():
     import torch
+    if torch.cuda.is_available():
+        return "cuda"
     return "mps" if torch.backends.mps.is_available() else "cpu"
 
 

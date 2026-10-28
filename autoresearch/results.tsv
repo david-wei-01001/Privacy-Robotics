@@ -279,3 +279,265 @@ run_id	utc	plan_version	git_sha	stage	config_hash	datasets	encoders	preprocess	f
 2026-10-27_n1-0278	2026-10-27T03:35	0.6	68a5776+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center		cosine_top1	4.8	1		0.001	0.18375	0.9552	0.6936	0.8289					pilot	datasets/calib_sins__check_xd_normal
 2026-10-27_n1-0279	2026-10-27T03:35	0.6	68a5776+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center		cosine_top1	4.8	1		0.01	0.0	0.0448	0.0058	0.9932					pilot	datasets/calib_xd_normal__check_sins
 2026-10-27_n1-0280	2026-10-27T03:35	0.6	68a5776+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center		cosine_top1	4.8	1		0.001	0.0	0.0299	0.0029	0.9932					pilot	datasets/calib_xd_normal__check_sins
+gpu1-0001	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		cosine_top1	4.8	1		0.01	0.0163	1.0	0.85	0.9904					pilot	home
+gpu1-0002	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		cosine_top1	4.8	1		0.001	0.00185	1.0	0.6	0.9904					pilot	home
+gpu1-0003	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		cosine_top5	4.8	1		0.01	0.01815	1.0	0.875	0.9907					pilot	home
+gpu1-0004	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		cosine_top5	4.8	1		0.001	0.00259	1.0	0.675	0.9907					pilot	home
+gpu1-0005	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		l2_raw	4.8	1		0.01	0.02426	1.0	0.525	0.9234					pilot	home
+gpu1-0006	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		l2_raw	4.8	1		0.001	0.00185	1.0	0.3	0.9234					pilot	home
+gpu1-0007	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		hamming_sign	4.8	1		0.01	0.01074	1.0	0.875	0.9889					pilot	home
+gpu1-0008	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		hamming_sign	4.8	1		0.001	0.0013	1.0	0.7	0.9889					pilot	home
+gpu1-0009	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		logreg	4.8	1		0.01	0.02833	1.0	1.0	0.9977					pilot	home
+gpu1-0010	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		logreg	4.8	1		0.001	0.00537	1.0	0.85	0.9977					pilot	home
+gpu1-0011	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center	lsh	lsh{'k': 8, 'L': 8}	4.8	1		0.01	0.00278	1.0	0.375	0.9177					pilot	home
+gpu1-0012	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center	lsh	lsh{'k': 8, 'L': 8}	4.8	1		0.001	0.00037	0.6667	0.225	0.9177					pilot	home
+gpu1-0013	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center	lsh	lsh{'k': 8, 'L': 16}	4.8	1		0.01	0.00556	1.0	0.55	0.9708					pilot	home
+gpu1-0014	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center	lsh	lsh{'k': 8, 'L': 16}	4.8	1		0.001	0.00019	1.0	0.3	0.9708					pilot	home
+gpu1-0015	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center	lsh	lsh{'k': 12, 'L': 8}	4.8	1		0.01	0.00389	1.0	0.425	0.9115					pilot	home
+gpu1-0016	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center	lsh	lsh{'k': 12, 'L': 8}	4.8	1		0.001	0.0	1.0	0.175	0.9115					pilot	home
+gpu1-0017	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center	lsh	lsh{'k': 12, 'L': 16}	4.8	1		0.01	0.00315	1.0	0.6	0.9757					pilot	home
+gpu1-0018	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center	lsh	lsh{'k': 12, 'L': 16}	4.8	1		0.001	0.00019	1.0	0.425	0.9757					pilot	home
+gpu1-0019	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center	lsh	lsh{'k': 16, 'L': 8}	4.8	1		0.01	0.00019	1.0	0.175	0.7172					pilot	home
+gpu1-0020	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center	lsh	lsh{'k': 16, 'L': 8}	4.8	1		0.001	0.00019	1.0	0.175	0.7172					pilot	home
+gpu1-0021	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center	lsh	lsh{'k': 16, 'L': 16}	4.8	1		0.01	0.0013	1.0	0.4	0.7907					pilot	home
+gpu1-0022	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center	lsh	lsh{'k': 16, 'L': 16}	4.8	1		0.001	0.00019	1.0	0.25	0.7907					pilot	home
+gpu1-0023	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center		cosine_top1	4.8	1		0.01	0.01093	1.0	0.975	0.9991					pilot	home
+gpu1-0024	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center		cosine_top1	4.8	1		0.001	0.0013	1.0	0.875	0.9991					pilot	home
+gpu1-0025	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center		cosine_top5	4.8	1		0.01	0.00796	1.0	0.975	0.9996					pilot	home
+gpu1-0026	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center		cosine_top5	4.8	1		0.001	0.00111	1.0	0.975	0.9996					pilot	home
+gpu1-0027	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center		l2_raw	4.8	1		0.01	0.00981	1.0	0.925	0.9981					pilot	home
+gpu1-0028	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center		l2_raw	4.8	1		0.001	0.00056	1.0	0.625	0.9981					pilot	home
+gpu1-0029	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center		hamming_sign	4.8	1		0.01	0.01204	1.0	1.0	1.0					pilot	home
+gpu1-0030	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center		hamming_sign	4.8	1		0.001	0.00148	1.0	1.0	1.0					pilot	home
+gpu1-0031	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center		logreg	4.8	1		0.01	0.03315	1.0	0.95	0.9913					pilot	home
+gpu1-0032	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center		logreg	4.8	1		0.001	0.0013	0.6667	0.075	0.9913					pilot	home
+gpu1-0033	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center	lsh	lsh{'k': 8, 'L': 8}	4.8	1		0.01	0.00444	1.0	0.425	0.9697					pilot	home
+gpu1-0034	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center	lsh	lsh{'k': 8, 'L': 8}	4.8	1		0.001	0.0	0.0	0.0	0.9697					pilot	home
+gpu1-0035	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center	lsh	lsh{'k': 8, 'L': 16}	4.8	1		0.01	0.00352	1.0	0.65	0.9943					pilot	home
+gpu1-0036	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center	lsh	lsh{'k': 8, 'L': 16}	4.8	1		0.001	0.00148	1.0	0.525	0.9943					pilot	home
+gpu1-0037	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center	lsh	lsh{'k': 12, 'L': 8}	4.8	1		0.01	0.00333	1.0	0.525	0.9891					pilot	home
+gpu1-0038	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center	lsh	lsh{'k': 12, 'L': 8}	4.8	1		0.001	0.00037	1.0	0.375	0.9891					pilot	home
+gpu1-0039	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center	lsh	lsh{'k': 12, 'L': 16}	4.8	1		0.01	0.00296	1.0	0.775	0.9979					pilot	home
+gpu1-0040	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center	lsh	lsh{'k': 12, 'L': 16}	4.8	1		0.001	0.0013	1.0	0.525	0.9979					pilot	home
+gpu1-0041	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center	lsh	lsh{'k': 16, 'L': 8}	4.8	1		0.01	0.00426	1.0	0.675	0.9932					pilot	home
+gpu1-0042	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center	lsh	lsh{'k': 16, 'L': 8}	4.8	1		0.001	0.00204	1.0	0.6	0.9932					pilot	home
+gpu1-0043	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center	lsh	lsh{'k': 16, 'L': 16}	4.8	1		0.01	0.00407	1.0	0.75	0.9973					pilot	home
+gpu1-0044	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center	lsh	lsh{'k': 16, 'L': 16}	4.8	1		0.001	0.00074	1.0	0.5	0.9973					pilot	home
+gpu1-0045	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center		cosine_top1	4.8	1		0.01	0.00778	0.6667	0.05	0.6954					pilot	home
+gpu1-0046	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center		cosine_top1	4.8	1		0.001	0.00185	0.3333	0.025	0.6954					pilot	home
+gpu1-0047	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center		cosine_top5	4.8	1		0.01	0.00593	0.0	0.0	0.697					pilot	home
+gpu1-0048	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center		cosine_top5	4.8	1		0.001	0.00056	0.0	0.0	0.697					pilot	home
+gpu1-0049	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center		l2_raw	4.8	1		0.01	0.00704	1.0	0.175	0.7856					pilot	home
+gpu1-0050	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center		l2_raw	4.8	1		0.001	0.00019	0.3333	0.025	0.7856					pilot	home
+gpu1-0051	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center		hamming_sign	4.8	1		0.01	0.00704	1.0	0.175	0.8988					pilot	home
+gpu1-0052	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center		hamming_sign	4.8	1		0.001	0.0013	0.3333	0.05	0.8988					pilot	home
+gpu1-0053	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center		logreg	4.8	1		0.01	0.00889	1.0	0.625	0.932					pilot	home
+gpu1-0054	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center		logreg	4.8	1		0.001	0.00167	1.0	0.4	0.932					pilot	home
+gpu1-0055	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center	lsh	lsh{'k': 8, 'L': 8}	4.8	1		0.01	0.0	0.0	0.0	0.6163					pilot	home
+gpu1-0056	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center	lsh	lsh{'k': 8, 'L': 8}	4.8	1		0.001	0.0	0.0	0.0	0.6163					pilot	home
+gpu1-0057	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center	lsh	lsh{'k': 8, 'L': 16}	4.8	1		0.01	0.00407	0.0	0.0	0.6909					pilot	home
+gpu1-0058	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center	lsh	lsh{'k': 8, 'L': 16}	4.8	1		0.001	0.00056	0.0	0.0	0.6909					pilot	home
+gpu1-0059	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center	lsh	lsh{'k': 12, 'L': 8}	4.8	1		0.01	0.00759	0.3333	0.025	0.6589					pilot	home
+gpu1-0060	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center	lsh	lsh{'k': 12, 'L': 8}	4.8	1		0.001	0.00093	0.0	0.0	0.6589					pilot	home
+gpu1-0061	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center	lsh	lsh{'k': 12, 'L': 16}	4.8	1		0.01	0.0037	0.0	0.0	0.6677					pilot	home
+gpu1-0062	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center	lsh	lsh{'k': 12, 'L': 16}	4.8	1		0.001	0.00074	0.0	0.0	0.6677					pilot	home
+gpu1-0063	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center	lsh	lsh{'k': 16, 'L': 8}	4.8	1		0.01	0.00056	0.0	0.0	0.6504					pilot	home
+gpu1-0064	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center	lsh	lsh{'k': 16, 'L': 8}	4.8	1		0.001	0.0	0.0	0.0	0.6504					pilot	home
+gpu1-0065	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center	lsh	lsh{'k': 16, 'L': 16}	4.8	1		0.01	0.00685	0.0	0.0	0.6435					pilot	home
+gpu1-0066	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center	lsh	lsh{'k': 16, 'L': 16}	4.8	1		0.001	0.00056	0.0	0.0	0.6435					pilot	home
+gpu1-0067	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center		cosine_top1	4.8	1		0.01	0.00463	1.0	0.775	0.9859					pilot	home
+gpu1-0068	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center		cosine_top1	4.8	1		0.001	0.00019	1.0	0.675	0.9859					pilot	home
+gpu1-0069	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center		cosine_top5	4.8	1		0.01	0.00778	1.0	0.8	0.99					pilot	home
+gpu1-0070	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center		cosine_top5	4.8	1		0.001	0.00093	1.0	0.775	0.99					pilot	home
+gpu1-0071	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center		l2_raw	4.8	1		0.01	0.00407	1.0	0.725	0.9558					pilot	home
+gpu1-0072	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center		l2_raw	4.8	1		0.001	0.00019	1.0	0.6	0.9558					pilot	home
+gpu1-0073	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center		hamming_sign	4.8	1		0.01	0.00907	1.0	0.825	0.9767					pilot	home
+gpu1-0074	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center		hamming_sign	4.8	1		0.001	0.00056	1.0	0.675	0.9767					pilot	home
+gpu1-0075	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center		logreg	4.8	1		0.01	0.01444	1.0	1.0	1.0					pilot	home
+gpu1-0076	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center		logreg	4.8	1		0.001	0.00037	1.0	1.0	1.0					pilot	home
+gpu1-0077	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center	lsh	lsh{'k': 8, 'L': 8}	4.8	1		0.01	0.00981	1.0	0.65	0.9683					pilot	home
+gpu1-0078	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center	lsh	lsh{'k': 8, 'L': 8}	4.8	1		0.001	0.00204	1.0	0.45	0.9683					pilot	home
+gpu1-0079	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center	lsh	lsh{'k': 8, 'L': 16}	4.8	1		0.01	0.005	1.0	0.675	0.9728					pilot	home
+gpu1-0080	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center	lsh	lsh{'k': 8, 'L': 16}	4.8	1		0.001	0.00241	1.0	0.45	0.9728					pilot	home
+gpu1-0081	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center	lsh	lsh{'k': 12, 'L': 8}	4.8	1		0.01	0.00556	1.0	0.7	0.958					pilot	home
+gpu1-0082	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center	lsh	lsh{'k': 12, 'L': 8}	4.8	1		0.001	0.00074	1.0	0.475	0.958					pilot	home
+gpu1-0083	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center	lsh	lsh{'k': 12, 'L': 16}	4.8	1		0.01	0.00407	1.0	0.65	0.9509					pilot	home
+gpu1-0084	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center	lsh	lsh{'k': 12, 'L': 16}	4.8	1		0.001	0.00093	1.0	0.6	0.9509					pilot	home
+gpu1-0085	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center	lsh	lsh{'k': 16, 'L': 8}	4.8	1		0.01	0.00222	1.0	0.45	0.888					pilot	home
+gpu1-0086	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center	lsh	lsh{'k': 16, 'L': 8}	4.8	1		0.001	0.00019	1.0	0.275	0.888					pilot	home
+gpu1-0087	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center	lsh	lsh{'k': 16, 'L': 16}	4.8	1		0.01	0.00074	1.0	0.5	0.9512					pilot	home
+gpu1-0088	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center	lsh	lsh{'k': 16, 'L': 16}	4.8	1		0.001	0.0	1.0	0.475	0.9512					pilot	home
+gpu1-0089	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center		cosine_top1	4.8	1		0.01	0.015	1.0	0.95	0.9971					pilot	home
+gpu1-0090	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center		cosine_top1	4.8	1		0.001	0.00056	1.0	0.75	0.9971					pilot	home
+gpu1-0091	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center		cosine_top5	4.8	1		0.01	0.01593	1.0	0.95	0.9977					pilot	home
+gpu1-0092	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center		cosine_top5	4.8	1		0.001	0.00056	1.0	0.775	0.9977					pilot	home
+gpu1-0093	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center		l2_raw	4.8	1		0.01	0.01407	1.0	0.825	0.9873					pilot	home
+gpu1-0094	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center		l2_raw	4.8	1		0.001	0.00148	1.0	0.675	0.9873					pilot	home
+gpu1-0095	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center		hamming_sign	4.8	1		0.01	0.00833	1.0	0.7	0.9922					pilot	home
+gpu1-0096	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center		hamming_sign	4.8	1		0.001	0.00167	1.0	0.525	0.9922					pilot	home
+gpu1-0097	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center		logreg	4.8	1		0.01	0.01574	1.0	1.0	1.0					pilot	home
+gpu1-0098	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center		logreg	4.8	1		0.001	0.00037	1.0	1.0	1.0					pilot	home
+gpu1-0099	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center	lsh	lsh{'k': 8, 'L': 8}	4.8	1		0.01	0.00333	1.0	0.35	0.9424					pilot	home
+gpu1-0100	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center	lsh	lsh{'k': 8, 'L': 8}	4.8	1		0.001	0.00019	0.6667	0.15	0.9424					pilot	home
+gpu1-0101	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center	lsh	lsh{'k': 8, 'L': 16}	4.8	1		0.01	0.00481	1.0	0.55	0.9595					pilot	home
+gpu1-0102	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center	lsh	lsh{'k': 8, 'L': 16}	4.8	1		0.001	0.00037	1.0	0.4	0.9595					pilot	home
+gpu1-0103	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center	lsh	lsh{'k': 12, 'L': 8}	4.8	1		0.01	0.01111	1.0	0.575	0.884					pilot	home
+gpu1-0104	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center	lsh	lsh{'k': 12, 'L': 8}	4.8	1		0.001	0.00093	1.0	0.25	0.884					pilot	home
+gpu1-0105	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center	lsh	lsh{'k': 12, 'L': 16}	4.8	1		0.01	0.00981	1.0	0.65	0.9218					pilot	home
+gpu1-0106	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center	lsh	lsh{'k': 12, 'L': 16}	4.8	1		0.001	0.00019	0.6667	0.2	0.9218					pilot	home
+gpu1-0107	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center	lsh	lsh{'k': 16, 'L': 8}	4.8	1		0.01	0.00019	0.6667	0.05	0.7042					pilot	home
+gpu1-0108	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center	lsh	lsh{'k': 16, 'L': 8}	4.8	1		0.001	0.00019	0.6667	0.05	0.7042					pilot	home
+gpu1-0109	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center	lsh	lsh{'k': 16, 'L': 16}	4.8	1		0.01	0.00167	1.0	0.325	0.7628					pilot	home
+gpu1-0110	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center	lsh	lsh{'k': 16, 'L': 16}	4.8	1		0.001	0.0	0.6667	0.1	0.7628					pilot	home
+gpu1-0111	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		cosine_top1	4.8	1		0.01	0.02632	1.0	0.525	0.8543					pilot	xd
+gpu1-0112	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		cosine_top1	4.8	1		0.001	0.02632	1.0	0.475	0.8543					pilot	xd
+gpu1-0113	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		cosine_top5	4.8	1		0.01	0.0	1.0	0.5	0.8661					pilot	xd
+gpu1-0114	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		cosine_top5	4.8	1		0.001	0.0	1.0	0.475	0.8661					pilot	xd
+gpu1-0115	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		l2_raw	4.8	1		0.01	0.02632	1.0	0.375	0.8464					pilot	xd
+gpu1-0116	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		l2_raw	4.8	1		0.001	0.0	0.3333	0.025	0.8464					pilot	xd
+gpu1-0117	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		hamming_sign	4.8	1		0.01	0.0	0.3333	0.025	0.6347					pilot	xd
+gpu1-0118	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		hamming_sign	4.8	1		0.001	0.0	0.3333	0.025	0.6347					pilot	xd
+gpu1-0119	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center	lsh	lsh{'k': 8, 'L': 8}	4.8	1		0.01	0.0	0.6667	0.125	0.901					pilot	xd
+gpu1-0120	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center	lsh	lsh{'k': 8, 'L': 8}	4.8	1		0.001	0.0	0.6667	0.05	0.901					pilot	xd
+gpu1-0121	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center	lsh	lsh{'k': 8, 'L': 16}	4.8	1		0.01	0.01316	1.0	0.275	0.8515					pilot	xd
+gpu1-0122	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center	lsh	lsh{'k': 8, 'L': 16}	4.8	1		0.001	0.0	0.6667	0.125	0.8515					pilot	xd
+gpu1-0123	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center	lsh	lsh{'k': 12, 'L': 8}	4.8	1		0.01	0.01316	1.0	0.175	0.7173					pilot	xd
+gpu1-0124	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center	lsh	lsh{'k': 12, 'L': 8}	4.8	1		0.001	0.0	0.6667	0.075	0.7173					pilot	xd
+gpu1-0125	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center	lsh	lsh{'k': 12, 'L': 16}	4.8	1		0.01	0.0	1.0	0.3	0.7457					pilot	xd
+gpu1-0126	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center	lsh	lsh{'k': 12, 'L': 16}	4.8	1		0.001	0.0	1.0	0.3	0.7457					pilot	xd
+gpu1-0127	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center	lsh	lsh{'k': 16, 'L': 8}	4.8	1		0.01	0.0	0.6667	0.05	0.714					pilot	xd
+gpu1-0128	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center	lsh	lsh{'k': 16, 'L': 8}	4.8	1		0.001	0.0	0.6667	0.05	0.714					pilot	xd
+gpu1-0129	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center	lsh	lsh{'k': 16, 'L': 16}	4.8	1		0.01	0.0	1.0	0.125	0.7189					pilot	xd
+gpu1-0130	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center	lsh	lsh{'k': 16, 'L': 16}	4.8	1		0.001	0.0	1.0	0.125	0.7189					pilot	xd
+gpu1-0131	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center		cosine_top1	4.8	1		0.01	0.01316	1.0	0.925	0.9882					pilot	xd
+gpu1-0132	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center		cosine_top1	4.8	1		0.001	0.01316	1.0	0.575	0.9882					pilot	xd
+gpu1-0133	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center		cosine_top5	4.8	1		0.01	0.01316	1.0	0.825	0.9898					pilot	xd
+gpu1-0134	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center		cosine_top5	4.8	1		0.001	0.01316	1.0	0.625	0.9898					pilot	xd
+gpu1-0135	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center		l2_raw	4.8	1		0.01	0.01316	1.0	0.525	0.9102					pilot	xd
+gpu1-0136	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center		l2_raw	4.8	1		0.001	0.01316	1.0	0.475	0.9102					pilot	xd
+gpu1-0137	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center		hamming_sign	4.8	1		0.01	0.0	0.0	0.0	0.6311					pilot	xd
+gpu1-0138	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center		hamming_sign	4.8	1		0.001	0.0	0.0	0.0	0.6311					pilot	xd
+gpu1-0139	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center	lsh	lsh{'k': 8, 'L': 8}	4.8	1		0.01	0.01316	1.0	0.5	0.9413					pilot	xd
+gpu1-0140	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center	lsh	lsh{'k': 8, 'L': 8}	4.8	1		0.001	0.01316	1.0	0.5	0.9413					pilot	xd
+gpu1-0141	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center	lsh	lsh{'k': 8, 'L': 16}	4.8	1		0.01	0.02632	1.0	0.65	0.9653					pilot	xd
+gpu1-0142	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center	lsh	lsh{'k': 8, 'L': 16}	4.8	1		0.001	0.0	1.0	0.45	0.9653					pilot	xd
+gpu1-0143	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center	lsh	lsh{'k': 12, 'L': 8}	4.8	1		0.01	0.03947	1.0	0.575	0.9293					pilot	xd
+gpu1-0144	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center	lsh	lsh{'k': 12, 'L': 8}	4.8	1		0.001	0.02632	1.0	0.55	0.9293					pilot	xd
+gpu1-0145	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center	lsh	lsh{'k': 12, 'L': 16}	4.8	1		0.01	0.10526	1.0	0.9	0.973					pilot	xd
+gpu1-0146	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center	lsh	lsh{'k': 12, 'L': 16}	4.8	1		0.001	0.0	1.0	0.5	0.973					pilot	xd
+gpu1-0147	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center	lsh	lsh{'k': 16, 'L': 8}	4.8	1		0.01	0.01316	1.0	0.575	0.9627					pilot	xd
+gpu1-0148	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center	lsh	lsh{'k': 16, 'L': 8}	4.8	1		0.001	0.01316	1.0	0.575	0.9627					pilot	xd
+gpu1-0149	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center	lsh	lsh{'k': 16, 'L': 16}	4.8	1		0.01	0.01316	1.0	0.725	0.9791					pilot	xd
+gpu1-0150	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	mfcc_stats			l2norm+center	lsh	lsh{'k': 16, 'L': 16}	4.8	1		0.001	0.01316	1.0	0.65	0.9791					pilot	xd
+gpu1-0151	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center		cosine_top1	4.8	1		0.01	0.0	0.3333	0.025	0.3497					pilot	xd
+gpu1-0152	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center		cosine_top1	4.8	1		0.001	0.0	0.0	0.0	0.3497					pilot	xd
+gpu1-0153	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center		cosine_top5	4.8	1		0.01	0.0	0.0	0.0	0.3345					pilot	xd
+gpu1-0154	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center		cosine_top5	4.8	1		0.001	0.0	0.0	0.0	0.3345					pilot	xd
+gpu1-0155	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center		l2_raw	4.8	1		0.01	0.01316	0.3333	0.05	0.652					pilot	xd
+gpu1-0156	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center		l2_raw	4.8	1		0.001	0.01316	0.3333	0.05	0.652					pilot	xd
+gpu1-0157	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center		hamming_sign	4.8	1		0.01	0.01316	0.3333	0.05	0.4859					pilot	xd
+gpu1-0158	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center		hamming_sign	4.8	1		0.001	0.01316	0.0	0.0	0.4859					pilot	xd
+gpu1-0159	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center	lsh	lsh{'k': 8, 'L': 8}	4.8	1		0.01	0.0	0.0	0.0	0.2362					pilot	xd
+gpu1-0160	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center	lsh	lsh{'k': 8, 'L': 8}	4.8	1		0.001	0.0	0.0	0.0	0.2362					pilot	xd
+gpu1-0161	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center	lsh	lsh{'k': 8, 'L': 16}	4.8	1		0.01	0.0	0.0	0.0	0.2587					pilot	xd
+gpu1-0162	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center	lsh	lsh{'k': 8, 'L': 16}	4.8	1		0.001	0.0	0.0	0.0	0.2587					pilot	xd
+gpu1-0163	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center	lsh	lsh{'k': 12, 'L': 8}	4.8	1		0.01	0.0	0.0	0.0	0.3674					pilot	xd
+gpu1-0164	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center	lsh	lsh{'k': 12, 'L': 8}	4.8	1		0.001	0.0	0.0	0.0	0.3674					pilot	xd
+gpu1-0165	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center	lsh	lsh{'k': 12, 'L': 16}	4.8	1		0.01	0.0	0.0	0.0	0.3434					pilot	xd
+gpu1-0166	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center	lsh	lsh{'k': 12, 'L': 16}	4.8	1		0.001	0.0	0.0	0.0	0.3434					pilot	xd
+gpu1-0167	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center	lsh	lsh{'k': 16, 'L': 8}	4.8	1		0.01	0.0	0.0	0.0	0.3127					pilot	xd
+gpu1-0168	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center	lsh	lsh{'k': 16, 'L': 8}	4.8	1		0.001	0.0	0.0	0.0	0.3127					pilot	xd
+gpu1-0169	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center	lsh	lsh{'k': 16, 'L': 16}	4.8	1		0.01	0.0	0.0	0.0	0.2906					pilot	xd
+gpu1-0170	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	hubert			l2norm+center	lsh	lsh{'k': 16, 'L': 16}	4.8	1		0.001	0.0	0.0	0.0	0.2906					pilot	xd
+gpu1-0171	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center		cosine_top1	4.8	1		0.01	0.01316	1.0	0.675	0.8618					pilot	xd
+gpu1-0172	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center		cosine_top1	4.8	1		0.001	0.0	1.0	0.6	0.8618					pilot	xd
+gpu1-0173	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center		cosine_top5	4.8	1		0.01	0.0	1.0	0.725	0.8947					pilot	xd
+gpu1-0174	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center		cosine_top5	4.8	1		0.001	0.0	1.0	0.6	0.8947					pilot	xd
+gpu1-0175	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center		l2_raw	4.8	1		0.01	0.0	1.0	0.575	0.8306					pilot	xd
+gpu1-0176	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center		l2_raw	4.8	1		0.001	0.0	1.0	0.525	0.8306					pilot	xd
+gpu1-0177	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center		hamming_sign	4.8	1		0.01	0.0	0.0	0.0	0.6452					pilot	xd
+gpu1-0178	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center		hamming_sign	4.8	1		0.001	0.0	0.0	0.0	0.6452					pilot	xd
+gpu1-0179	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center	lsh	lsh{'k': 8, 'L': 8}	4.8	1		0.01	0.0	1.0	0.15	0.851					pilot	xd
+gpu1-0180	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center	lsh	lsh{'k': 8, 'L': 8}	4.8	1		0.001	0.0	0.0	0.0	0.851					pilot	xd
+gpu1-0181	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center	lsh	lsh{'k': 8, 'L': 16}	4.8	1		0.01	0.0	1.0	0.275	0.864					pilot	xd
+gpu1-0182	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center	lsh	lsh{'k': 8, 'L': 16}	4.8	1		0.001	0.0	1.0	0.2	0.864					pilot	xd
+gpu1-0183	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center	lsh	lsh{'k': 12, 'L': 8}	4.8	1		0.01	0.0	1.0	0.45	0.8648					pilot	xd
+gpu1-0184	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center	lsh	lsh{'k': 12, 'L': 8}	4.8	1		0.001	0.0	1.0	0.325	0.8648					pilot	xd
+gpu1-0185	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center	lsh	lsh{'k': 12, 'L': 16}	4.8	1		0.01	0.0	1.0	0.525	0.838					pilot	xd
+gpu1-0186	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center	lsh	lsh{'k': 12, 'L': 16}	4.8	1		0.001	0.0	1.0	0.4	0.838					pilot	xd
+gpu1-0187	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center	lsh	lsh{'k': 16, 'L': 8}	4.8	1		0.01	0.0	1.0	0.275	0.8158					pilot	xd
+gpu1-0188	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center	lsh	lsh{'k': 16, 'L': 8}	4.8	1		0.001	0.0	1.0	0.275	0.8158					pilot	xd
+gpu1-0189	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center	lsh	lsh{'k': 16, 'L': 16}	4.8	1		0.01	0.0	1.0	0.55	0.8574					pilot	xd
+gpu1-0190	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clap			l2norm+center	lsh	lsh{'k': 16, 'L': 16}	4.8	1		0.001	0.0	1.0	0.4	0.8574					pilot	xd
+gpu1-0191	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center		cosine_top1	4.8	1		0.01	0.0	1.0	0.575	0.9128					pilot	xd
+gpu1-0192	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center		cosine_top1	4.8	1		0.001	0.0	1.0	0.575	0.9128					pilot	xd
+gpu1-0193	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center		cosine_top5	4.8	1		0.01	0.0	1.0	0.6	0.9197					pilot	xd
+gpu1-0194	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center		cosine_top5	4.8	1		0.001	0.0	1.0	0.575	0.9197					pilot	xd
+gpu1-0195	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center		l2_raw	4.8	1		0.01	0.01316	1.0	0.625	0.8023					pilot	xd
+gpu1-0196	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center		l2_raw	4.8	1		0.001	0.0	1.0	0.575	0.8023					pilot	xd
+gpu1-0197	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center		hamming_sign	4.8	1		0.01	0.05263	0.3333	0.025	0.3697					pilot	xd
+gpu1-0198	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center		hamming_sign	4.8	1		0.001	0.01316	0.0	0.0	0.3697					pilot	xd
+gpu1-0199	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center	lsh	lsh{'k': 8, 'L': 8}	4.8	1		0.01	0.0	0.0	0.0	0.7365					pilot	xd
+gpu1-0200	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center	lsh	lsh{'k': 8, 'L': 8}	4.8	1		0.001	0.0	0.0	0.0	0.7365					pilot	xd
+gpu1-0201	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center	lsh	lsh{'k': 8, 'L': 16}	4.8	1		0.01	0.03947	1.0	0.325	0.7465					pilot	xd
+gpu1-0202	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center	lsh	lsh{'k': 8, 'L': 16}	4.8	1		0.001	0.0	0.3333	0.025	0.7465					pilot	xd
+gpu1-0203	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center	lsh	lsh{'k': 12, 'L': 8}	4.8	1		0.01	0.0	0.6667	0.275	0.7929					pilot	xd
+gpu1-0204	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center	lsh	lsh{'k': 12, 'L': 8}	4.8	1		0.001	0.0	0.3333	0.05	0.7929					pilot	xd
+gpu1-0205	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center	lsh	lsh{'k': 12, 'L': 16}	4.8	1		0.01	0.01316	1.0	0.45	0.8393					pilot	xd
+gpu1-0206	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center	lsh	lsh{'k': 12, 'L': 16}	4.8	1		0.001	0.0	1.0	0.25	0.8393					pilot	xd
+gpu1-0207	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center	lsh	lsh{'k': 16, 'L': 8}	4.8	1		0.01	0.0	0.6667	0.075	0.7071					pilot	xd
+gpu1-0208	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center	lsh	lsh{'k': 16, 'L': 8}	4.8	1		0.001	0.0	0.6667	0.075	0.7071					pilot	xd
+gpu1-0209	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center	lsh	lsh{'k': 16, 'L': 16}	4.8	1		0.01	0.01316	1.0	0.3	0.7553					pilot	xd
+gpu1-0210	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	ast			l2norm+center	lsh	lsh{'k': 16, 'L': 16}	4.8	1		0.001	0.0	1.0	0.1	0.7553					pilot	xd
+gpu1-0211	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clip_frames			l2norm+center		cosine_top1	4.8	1		0.01	0.03947	1.0	0.575	0.897					pilot	xd
+gpu1-0212	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clip_frames			l2norm+center		cosine_top1	4.8	1		0.001	0.0	1.0	0.325	0.897					pilot	xd
+gpu1-0213	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clip_frames			l2norm+center		cosine_top5	4.8	1		0.01	0.03947	1.0	0.55	0.8878					pilot	xd
+gpu1-0214	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clip_frames			l2norm+center		cosine_top5	4.8	1		0.001	0.0	1.0	0.25	0.8878					pilot	xd
+gpu1-0215	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clip_frames			l2norm+center		l2_raw	4.8	1		0.01	0.03947	1.0	0.55	0.8493					pilot	xd
+gpu1-0216	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clip_frames			l2norm+center		l2_raw	4.8	1		0.001	0.0	1.0	0.2	0.8493					pilot	xd
+gpu1-0217	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clip_frames			l2norm+center		hamming_sign	4.8	1		0.01	0.0	0.3333	0.05	0.4426					pilot	xd
+gpu1-0218	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clip_frames			l2norm+center		hamming_sign	4.8	1		0.001	0.0	0.0	0.0	0.4426					pilot	xd
+gpu1-0219	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clip_frames			l2norm+center	lsh	lsh{'k': 8, 'L': 8}	4.8	1		0.01	0.02632	0.3333	0.025	0.6832					pilot	xd
+gpu1-0220	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clip_frames			l2norm+center	lsh	lsh{'k': 8, 'L': 8}	4.8	1		0.001	0.02632	0.3333	0.025	0.6832					pilot	xd
+gpu1-0221	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clip_frames			l2norm+center	lsh	lsh{'k': 8, 'L': 16}	4.8	1		0.01	0.0	0.6667	0.15	0.8474					pilot	xd
+gpu1-0222	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clip_frames			l2norm+center	lsh	lsh{'k': 8, 'L': 16}	4.8	1		0.001	0.0	0.6667	0.15	0.8474					pilot	xd
+gpu1-0223	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clip_frames			l2norm+center	lsh	lsh{'k': 12, 'L': 8}	4.8	1		0.01	0.02632	0.6667	0.15	0.7164					pilot	xd
+gpu1-0224	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clip_frames			l2norm+center	lsh	lsh{'k': 12, 'L': 8}	4.8	1		0.001	0.01316	0.6667	0.075	0.7164					pilot	xd
+gpu1-0225	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clip_frames			l2norm+center	lsh	lsh{'k': 12, 'L': 16}	4.8	1		0.01	0.0	0.3333	0.1	0.7319					pilot	xd
+gpu1-0226	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clip_frames			l2norm+center	lsh	lsh{'k': 12, 'L': 16}	4.8	1		0.001	0.0	0.0	0.0	0.7319					pilot	xd
+gpu1-0227	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clip_frames			l2norm+center	lsh	lsh{'k': 16, 'L': 8}	4.8	1		0.01	0.01316	1.0	0.425	0.8809					pilot	xd
+gpu1-0228	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clip_frames			l2norm+center	lsh	lsh{'k': 16, 'L': 8}	4.8	1		0.001	0.0	0.6667	0.125	0.8809					pilot	xd
+gpu1-0229	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clip_frames			l2norm+center	lsh	lsh{'k': 16, 'L': 16}	4.8	1		0.01	0.0	1.0	0.175	0.9026					pilot	xd
+gpu1-0230	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	clip_frames			l2norm+center	lsh	lsh{'k': 16, 'L': 16}	4.8	1		0.001	0.0	0.3333	0.1	0.9026					pilot	xd
+gpu1-0231	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	fusion:vggish+clip_frames			l2norm+center		cosine_top1	4.8	1		0.01	0.0	1.0	0.425	0.8895					pilot	xd
+gpu1-0232	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	fusion:vggish+clip_frames			l2norm+center		cosine_top1	4.8	1		0.001	0.0	1.0	0.275	0.8895					pilot	xd
+gpu1-0233	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	fusion:vggish+clip_frames			l2norm+center		cosine_top5	4.8	1		0.01	0.0	1.0	0.4	0.9079					pilot	xd
+gpu1-0234	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	fusion:vggish+clip_frames			l2norm+center		cosine_top5	4.8	1		0.001	0.0	1.0	0.275	0.9079					pilot	xd
+gpu1-0235	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	fusion:vggish+clip_frames			l2norm+center		l2_raw	4.8	1		0.01	0.0	1.0	0.425	0.8898					pilot	xd
+gpu1-0236	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	fusion:vggish+clip_frames			l2norm+center		l2_raw	4.8	1		0.001	0.0	1.0	0.25	0.8898					pilot	xd
+gpu1-0237	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	fusion:vggish+clip_frames			l2norm+center		hamming_sign	4.8	1		0.01	0.0	0.0	0.0	0.5181					pilot	xd
+gpu1-0238	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	fusion:vggish+clip_frames			l2norm+center		hamming_sign	4.8	1		0.001	0.0	0.0	0.0	0.5181					pilot	xd
+gpu1-0239	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	fusion:vggish+clip_frames			l2norm+center	lsh	lsh{'k': 8, 'L': 8}	4.8	1		0.01	0.0	0.0	0.0	0.5717					pilot	xd
+gpu1-0240	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	fusion:vggish+clip_frames			l2norm+center	lsh	lsh{'k': 8, 'L': 8}	4.8	1		0.001	0.0	0.0	0.0	0.5717					pilot	xd
+gpu1-0241	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	fusion:vggish+clip_frames			l2norm+center	lsh	lsh{'k': 8, 'L': 16}	4.8	1		0.01	0.02632	0.3333	0.025	0.585					pilot	xd
+gpu1-0242	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	fusion:vggish+clip_frames			l2norm+center	lsh	lsh{'k': 8, 'L': 16}	4.8	1		0.001	0.0	0.0	0.0	0.585					pilot	xd
+gpu1-0243	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	fusion:vggish+clip_frames			l2norm+center	lsh	lsh{'k': 12, 'L': 8}	4.8	1		0.01	0.01316	0.3333	0.075	0.5969					pilot	xd
+gpu1-0244	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	fusion:vggish+clip_frames			l2norm+center	lsh	lsh{'k': 12, 'L': 8}	4.8	1		0.001	0.0	0.0	0.0	0.5969					pilot	xd
+gpu1-0245	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	fusion:vggish+clip_frames			l2norm+center	lsh	lsh{'k': 12, 'L': 16}	4.8	1		0.01	0.07895	0.6667	0.15	0.716					pilot	xd
+gpu1-0246	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	fusion:vggish+clip_frames			l2norm+center	lsh	lsh{'k': 12, 'L': 16}	4.8	1		0.001	0.02632	0.3333	0.125	0.716					pilot	xd
+gpu1-0247	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	fusion:vggish+clip_frames			l2norm+center	lsh	lsh{'k': 16, 'L': 8}	4.8	1		0.01	0.02632	0.6667	0.1	0.6253					pilot	xd
+gpu1-0248	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	fusion:vggish+clip_frames			l2norm+center	lsh	lsh{'k': 16, 'L': 8}	4.8	1		0.001	0.01316	0.3333	0.025	0.6253					pilot	xd
+gpu1-0249	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	fusion:vggish+clip_frames			l2norm+center	lsh	lsh{'k': 16, 'L': 16}	4.8	1		0.01	0.02632	1.0	0.2	0.7329					pilot	xd
+gpu1-0250	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	fusion:vggish+clip_frames			l2norm+center	lsh	lsh{'k': 16, 'L': 16}	4.8	1		0.001	0.01316	0.6667	0.125	0.7329					pilot	xd
+gpu1-0251	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		cosine_top1	4.8	1		0.01	0.0163	1.0	0.85	0.9904					pilot	datasets/all_sources
+gpu1-0252	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		cosine_top1	4.8	1		0.001	0.00185	1.0	0.6	0.9904					pilot	datasets/all_sources
+gpu1-0253	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		cosine_top1	4.8	1		0.01	0.0163	1.0	0.85	0.9904					pilot	datasets/events_movie
+gpu1-0254	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		cosine_top1	4.8	1		0.001	0.00185	1.0	0.6	0.9904					pilot	datasets/events_movie
+gpu1-0255	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		cosine_top1	4.8	1		0.01	0.0163	1.0	0.85	0.9904					pilot	datasets/ref_movie__events_movie
+gpu1-0256	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		cosine_top1	4.8	1		0.001	0.00185	1.0	0.6	0.9904					pilot	datasets/ref_movie__events_movie
+gpu1-0257	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		cosine_top1	4.8	1		0.01	0.02632	1.0	0.525	0.8487					pilot	datasets/benign_xd_normal
+gpu1-0258	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		cosine_top1	4.8	1		0.001	0.01316	1.0	0.45	0.8487					pilot	datasets/benign_xd_normal
+gpu1-0259	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		cosine_top1	4.8	1		0.01	0.35526	1.0	0.85	0.8487					pilot	datasets/calib_sins__check_xd_normal
+gpu1-0260	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		cosine_top1	4.8	1		0.001	0.13158	1.0	0.6	0.8487					pilot	datasets/calib_sins__check_xd_normal
+gpu1-0261	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		cosine_top1	4.8	1		0.01	0.00056	1.0	0.525	0.9904					pilot	datasets/calib_xd_normal__check_sins
+gpu1-0262	2026-10-28T22:24	0.8	d886953+dirty	pilot	4660533b92	xd+sins+tv_mix	vggish			l2norm+center		cosine_top1	4.8	1		0.001	0.00056	1.0	0.45	0.9904					pilot	datasets/calib_xd_normal__check_sins

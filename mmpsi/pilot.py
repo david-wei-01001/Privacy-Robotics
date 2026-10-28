@@ -238,6 +238,7 @@ def main():
         hb.set(f"extract:{name}")
         st.start(f"encoder:{name}")
         cpath = root / "cache/emb" / f"{whash}_{enc.fingerprint()}.npy"
+        cpath.parent.mkdir(parents=True, exist_ok=True)
         try:
             cov, note = 1.0, "cached"
             if cpath.exists():
