@@ -24,6 +24,9 @@ encoders:
 - ast
 - clap
 - clip_frames
+- motion_stats
+- videomae_k400
+- xclip_b32
 matchers:
 - name: cosine_top1
 - name: cosine_top5
@@ -127,6 +130,15 @@ matchers:
   L: 32
   seed: 2
 budget:
-  extract_s: 14400
+  extract_s: 36000
   probe_windows: 24
   psi_windows: 150
+fusions:
+- - clap
+  - clip_frames
+- - ast
+  - clip_frames
+- - ast
+  - videomae_k400
+- - ast
+  - xclip_b32

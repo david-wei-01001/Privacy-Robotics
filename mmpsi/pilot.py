@@ -20,6 +20,7 @@ import pandas as pd
 import yaml
 
 from . import features  # noqa: F401  (registers encoders)
+from . import features_video  # noqa: F401  (registers the video / motion encoders)
 from . import matching  # noqa: F401  (registers matchers)
 from .core import REPO, Heartbeat, StageLog, build, data_root, get_logger, git_state, plan_version, short_hash
 from .data import _h, build_sins, build_tv_mix, build_xd
@@ -268,14 +269,23 @@ def main():
         audio = [n for n in E if encs[n].modality == "audio"]
         for track in ("home", "xd"):
             names = list(audio) + ([n for n in E if encs[n].modality == "video"] if track == "xd" else [])
-            if track == "xd" and audio and "clip_frames" in E:
-                best_a = max(audio, key=lambda n: max([r["recall_event"] for r in facts["runs"] if r["encoder"] == n
-                                                       and r["matcher"] == "cosine_top1" and r["fmr_target"] == 0.01] or [0]))
-                fused = np.concatenate([l2n(np.nan_to_num(E[best_a])), l2n(np.nan_to_num(E["clip_frames"]))], 1)
-                ok = np.isfinite(E[best_a][:, 0]) & np.isfinite(E["clip_frames"][:, 0])
-                fused[~ok] = np.nan
-                E[f"fusion:{best_a}+clip_frames"] = fused
-                names.append(f"fusion:{best_a}+clip_frames")
+            if track == "xd" and audio:
+                # early fusion (concatenated embeddings) of the pairs listed under `fusions:` in the config; without
+                # that key, the Night 1 rule: the audio encoder with the best home-track recall plus clip_frames
+                pairs = [tuple(p) for p in cfg.get("fusions", [])]
+                if not pairs and "clip_frames" in E:
+                    best_a = max(audio, key=lambda n: max([r["recall_event"] for r in facts["runs"] if r["encoder"] == n
+                                                           and r["matcher"] == "cosine_top1" and r["fmr_target"] == 0.01] or [0]))
+                    pairs = [(best_a, "clip_frames")]
+                for a_name, v_name in pairs:
+                    if a_name not in E or v_name not in E:
+                        log.warning(f"fusion {a_name}+{v_name}: an encoder is missing, skipped")
+                        continue
+                    fused = np.concatenate([l2n(np.nan_to_num(E[a_name])), l2n(np.nan_to_num(E[v_name]))], 1)
+                    ok = np.isfinite(E[a_name][:, 0]) & np.isfinite(E[v_name][:, 0])
+                    fused[~ok] = np.nan
+                    E[f"fusion:{a_name}+{v_name}"] = fused
+                    names.append(f"fusion:{a_name}+{v_name}")
             for name in names:
                 mod = "audio" if name in audio else "video"
                 masks = track_masks(W, track, mod)
@@ -285,8 +295,7 @@ def main():
                     log.warning(f"evaluate {track}/{name}: too few windows (ref {masks['ref'].sum()}, calib {masks['calib'].sum()})")
                     continue
                 P = Prepared(np.nan_to_num(E[name]), masks["ref"], masks["benign_train"])
-                if track == "home":
-                    P_cache[(track, name)] = (P, masks)
+                P_cache[(track, name)] = (P, masks)
                 for spec in cfg["matchers"]:
                     if spec["name"] == "logreg" and not masks["benign_train"].any():
                         log.warning(f"evaluate {track}/{name}: logreg skipped (no benign_train windows to train on)")
@@ -349,8 +358,32 @@ def main():
                 m = int(min(r.tau, r.params["L"]))
                 facts["equivalence"] = dict(run_id=new_id(), encoder=best, lsh_run_id=r.run_id,
                                             **apple_psi_equivalence(P, mh["ref"], q, int(r.params["k"]), int(r.params["L"]),
-                                                                    max(1, m), log=log))
-        st.done("apple_psi", **{k: v for k, v in (facts.get("equivalence") or {}).items() if k != "run_id"})
+                                                                    max(1, m), seed=int(r.params.get("seed", 0)), log=log))
+        # The same check on the XD track: the best LSH run of the best audio, video and fusion encoder. The PSI layer
+        # sees band items only, so it does not care which encoder produced the embedding.
+        def _kind(n):
+            return "fusion" if n.startswith("fusion:") else encs[n].modality
+        facts["equivalence_xd"] = {}
+        xd_lsh = runs[(runs.track == "xd") & (runs.matcher == "lsh") & (runs.fmr_target == 0.01)] if len(runs) else runs
+        for kind in ("audio", "video", "fusion"):
+            sub = xd_lsh[xd_lsh.encoder.map(_kind) == kind] if len(xd_lsh) else xd_lsh
+            if not len(sub):
+                continue
+            r = sub.sort_values(["recall_event", "fmr_check"], ascending=[False, True]).iloc[0]
+            if ("xd", r.encoder) not in P_cache:
+                continue
+            P, mx = P_cache[("xd", r.encoder)]
+            rng, n = np.random.default_rng(0), cfg["budget"].get("psi_windows", 150)
+            viol, ben = np.where(mx["violent"])[0], np.where(mx["check"])[0]
+            nv = min(len(viol), n // 2)
+            q = np.r_[rng.choice(viol, nv, replace=False), rng.choice(ben, min(len(ben), n - nv), replace=False)]
+            m = int(min(r.tau, r.params["L"]))
+            facts["equivalence_xd"][r.encoder] = dict(
+                run_id=new_id(), encoder=r.encoder, lsh_run_id=r.run_id,
+                **apple_psi_equivalence(P, mx["ref"], q, int(r.params["k"]), int(r.params["L"]), max(1, m),
+                                        seed=int(r.params.get("seed", 0)), log=log))
+        st.done("apple_psi", xd={k: round(v["equivalence_rate"], 4) for k, v in facts["equivalence_xd"].items()},
+                **{k: v for k, v in (facts.get("equivalence") or {}).items() if k != "run_id"})
     except Exception as ex:  # noqa: BLE001
         st.done("apple_psi", "failed", error=f"{type(ex).__name__}: {ex}")
         log.error(traceback.format_exc())
