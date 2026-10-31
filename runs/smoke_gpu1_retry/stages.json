@@ -1,0 +1,109 @@
+{
+  "data": {
+    "status": "ok",
+    "start": 1793224487.0870516,
+    "seconds": 0.0,
+    "windows": 792,
+    "file": "/mnt/data2/u/davidwei/Privacy-Robotics/data/derived/windows_e28a580bf4.csv"
+  },
+  "probe": {
+    "status": "ok",
+    "start": 1793224487.1012032,
+    "seconds": 8.9,
+    "encoders": [
+      "mfcc_stats",
+      "vggish",
+      "hubert",
+      "ast",
+      "clap",
+      "clip_frames"
+    ]
+  },
+  "encoder:vggish": {
+    "status": "ok",
+    "start": 1793224496.0090444,
+    "seconds": 3.6,
+    "windows": 792,
+    "coverage": 1.0,
+    "note": ""
+  },
+  "encoder:clip_frames": {
+    "status": "ok",
+    "start": 1793224499.5956068,
+    "seconds": 3.4,
+    "windows": 420,
+    "coverage": 1.0,
+    "note": ""
+  },
+  "encoder:hubert": {
+    "status": "ok",
+    "start": 1793224503.037676,
+    "seconds": 6.3,
+    "windows": 792,
+    "coverage": 1.0,
+    "note": ""
+  },
+  "encoder:mfcc_stats": {
+    "status": "ok",
+    "start": 1793224509.3478024,
+    "seconds": 5.8,
+    "windows": 792,
+    "coverage": 1.0,
+    "note": ""
+  },
+  "encoder:clap": {
+    "status": "ok",
+    "start": 1793224515.176096,
+    "seconds": 16.9,
+    "windows": 792,
+    "coverage": 1.0,
+    "note": ""
+  },
+  "encoder:ast": {
+    "status": "ok",
+    "start": 1793224532.120425,
+    "seconds": 28.0,
+    "windows": 792,
+    "coverage": 1.0,
+    "note": ""
+  },
+  "evaluate": {
+    "status": "ok",
+    "start": 1793224560.0995054,
+    "seconds": 1.2,
+    "runs": 250
+  },
+  "datasets": {
+    "status": "ok",
+    "start": 1793224561.3412106,
+    "seconds": 0.0,
+    "encoder": "vggish"
+  },
+  "apple_psi": {
+    "status": "ok",
+    "start": 1793224561.3722026,
+    "seconds": 10.9,
+    "encoder": "vggish",
+    "lsh_run_id": "smoke_gpu1_retry-0011",
+    "k": 8,
+    "L": 8,
+    "m": 6,
+    "n_windows": 121,
+    "n_plain_positive": 11,
+    "n_items_X": 181,
+    "cuckoo_dropped": 0,
+    "equivalence_rate": 1.0,
+    "n_disagree": 0,
+    "n_disagree_explained_by_drops": 0,
+    "voucher_bytes": 412,
+    "setup_s": 0.67,
+    "client_ms_per_voucher": 7.99,
+    "server_ms_per_voucher": 2.54,
+    "pdata_bytes": 15040
+  },
+  "report": {
+    "status": "ok",
+    "start": 1793224572.3040185,
+    "seconds": 0.0
+  }
+}

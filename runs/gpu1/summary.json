@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "night": "gpu1",
+    "plan_version": "0.8",
+    "git": "d886953+dirty",
+    "smoke": false,
+    "code_hash": "668d58781a",
+    "code_copy": "runs/gpu1/code/",
+    "config": {
+      "window_s": 4.8,
+      "hop_s": 2.4,
+      "xd": {
+        "locked_test_frac": 0.4,
+        "themes": [
+          "fighting",
+          "abuse"
+        ],
+        "max_violent": 150,
+        "max_normal": 100
+      },
+      "sins": {
+        "archives": [
+          1,
+          2
+        ],
+        "max_files": 7000
+      },
+      "tv_mix": {
+        "n": 300,
+        "snr_db": [
+          -10,
+          0
+        ]
+      },
+      "encoders": [
+        "mfcc_stats",
+        "vggish",
+        "hubert",
+        "ast",
+        "clap",
+        "clip_frames"
+      ],
+      "matchers": [
+        {
+          "name": "cosine_top1"
+        },
+        {
+          "name": "cosine_top5"
+        },
+        {
+          "name": "l2_raw"
+        },
+        {
+          "name": "hamming_sign"
+        },
+        {
+          "name": "logreg"
+        },
+        {
+          "name": "lsh",
+          "k": 8,
+          "L": 8
+        },
+        {
+          "name": "lsh",
+          "k": 8,
+          "L": 16
+        },
+        {
+          "name": "lsh",
+          "k": 12,
+          "L": 8
+        },
+        {
+          "name": "lsh",
+          "k": 12,
+          "L": 16
+        },
+        {
+          "name": "lsh",
+          "k": 16,
+          "L": 8
+        },
+        {
+          "name": "lsh",
+          "k": 16,
+          "L": 16
+        }
+      ],
+      "budget": {
+        "extract_s": 14400,
+        "probe_windows": 24,
+        "psi_windows": 150
+      }
+    },
+    "config_hash": "4660533b92",
+    "started": "2026-10-28 21:58",
+    "finished": "2026-10-28 22:24",
+    "minutes": 25.5
+  },
+  "stages": {
+    "data": {
+      "status": "ok",
+      "start": 1793224723.088223,
+      "seconds": 2.9,
+      "windows": 19594,
+      "file": "/mnt/data2/u/davidwei/Privacy-Robotics/data/derived/windows_d6b593b838.csv"
+    },
+    "probe": {
+      "status": "ok",
+      "start": 1793224726.0234947,
+      "seconds": 10.1,
+      "encoders": [
+        "mfcc_stats",
+        "vggish",
+        "hubert",
+        "ast",
+        "clap",
+        "clip_frames"
+      ]
+    },
+    "encoder:vggish": {
+      "status": "ok",
+      "start": 1793224736.0930302,
+      "seconds": 92.0,
+      "windows": 19594,
+      "coverage": 1.0,
+      "note": ""
+    },
+    "encoder:mfcc_stats": {
+      "status": "ok",
+      "start": 1793224828.1293118,
+      "seconds": 148.7,
+      "windows": 19594,
+      "coverage": 1.0,
+      "note": ""
+    },
+    "encoder:hubert": {
+      "status": "ok",
+      "start": 1793224976.7987432,
+      "seconds": 159.3,
+      "windows": 19594,
+      "coverage": 1.0,
+      "note": ""
+    },
+    "encoder:clip_frames": {
+      "status": "ok",
+      "start": 1793225136.1363873,
+      "seconds": 3.5,
+      "windows": 420,
+      "coverage": 1.0,
+      "note": ""
+    },
+    "encoder:clap": {
+      "status": "ok",
+      "start": 1793225139.68428,
+      "seconds": 410.0,
+      "windows": 19594,
+      "coverage": 1.0,
+      "note": ""
+    },
+    "encoder:ast": {
+      "status": "ok",
+      "start": 1793225549.7272878,
+      "seconds": 684.5,
+      "windows": 19594,
+      "coverage": 1.0,
+      "note": ""
+    },
+    "evaluate": {
+      "status": "ok",
+      "start": 1793226234.2059877,
+      "seconds": 5.4,
+      "runs": 250
+    },
+    "datasets": {
+      "status": "ok",
+      "start": 1793226239.5933168,
+      "seconds": 0.1,
+      "encoder": "vggish"
+    },
+    "apple_psi": {
+      "status": "ok",
+      "start": 1793226239.6977866,
+      "seconds": 14.4,
+      "encoder": "vggish",
+      "lsh_run_id": "gpu1-0019",
+      "k": 16,
+      "L": 8,
+      "m": 2,
+      "n_windows": 150,
+      "n_plain_positive": 7,
+      "n_items_X": 406,
+      "cuckoo_dropped": 0,
+      "equivalence_rate": 1.0,
+      "n_disagree": 0,
+      "n_disagree_explained_by_drops": 0,
+      "voucher_bytes": 412,
+      "setup_s": 1.52,
+      "client_ms_per_voucher": 8.01,
+      "server_ms_per_voucher": 2.59,
+      "pdata_bytes": 33586
+    },
+    "report": {
+      "status": "ok",
+      "start": 1793226254.0555842,
+      "seconds": 0.0
+    }
+  },
+  "n_runs": 250
+}

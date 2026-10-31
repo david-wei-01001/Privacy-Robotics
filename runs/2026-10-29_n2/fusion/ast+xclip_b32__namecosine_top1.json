@@ -1,0 +1,620 @@
+{
+  "matcher": {
+    "name": "cosine_top1"
+  },
+  "windows": {
+    "ref": 912,
+    "benign_train": 3691,
+    "calib": 4030,
+    "check": 3668,
+    "violent": 692,
+    "hard": 0,
+    "tv_sins": 0
+  },
+  "matched": [
+    {
+      "fmr": 0.01,
+      "n_benign_videos": 76,
+      "n_benign_windows": 7698,
+      "n_events": 67,
+      "rows": [
+        {
+          "method": "audio",
+          "recall": 0.17895522388059704,
+          "ci": [
+            0.07222551305970147,
+            0.3066694029850743
+          ]
+        },
+        {
+          "method": "video",
+          "recall": 0.0027194206482380997,
+          "ci": [
+            0.0,
+            0.017152781409024907
+          ]
+        },
+        {
+          "method": "early",
+          "recall": 0.0,
+          "ci": [
+            0.0,
+            0.04477611940298507
+          ]
+        },
+        {
+          "method": "late_max",
+          "recall": 0.012151112825999264,
+          "ci": [
+            0.004043511348811916,
+            0.061903041932051164
+          ]
+        },
+        {
+          "method": "late_sum",
+          "recall": 0.014925373134328358,
+          "ci": [
+            0.0,
+            0.04477611940298508
+          ]
+        },
+        {
+          "method": "late_min",
+          "recall": 0.014925373134328358,
+          "ci": [
+            0.0,
+            0.059701492537313425
+          ]
+        }
+      ],
+      "paired": [
+        {
+          "method": "early",
+          "versus": "audio",
+          "diff": -0.17895522388059704,
+          "diff_ci": [
+            -0.2835820895522388,
+            -0.07222551305970148
+          ]
+        },
+        {
+          "method": "early",
+          "versus": "video",
+          "diff": -0.0027194206482380997,
+          "diff_ci": [
+            -0.009127296518720669,
+            0.04060470873743253
+          ]
+        },
+        {
+          "method": "late_max",
+          "versus": "audio",
+          "diff": -0.16680411105459778,
+          "diff_ci": [
+            -0.2619630333046995,
+            -0.058381403791851604
+          ]
+        },
+        {
+          "method": "late_max",
+          "versus": "video",
+          "diff": 0.009431692177761165,
+          "diff_ci": [
+            0.003130995239126538,
+            0.04253701692653809
+          ]
+        },
+        {
+          "method": "late_sum",
+          "versus": "audio",
+          "diff": -0.1640298507462687,
+          "diff_ci": [
+            -0.2789585820895522,
+            -0.06728370646766187
+          ]
+        },
+        {
+          "method": "late_sum",
+          "versus": "video",
+          "diff": 0.012205952486090257,
+          "diff_ci": [
+            -0.007834692756951029,
+            0.04477611940298507
+          ]
+        },
+        {
+          "method": "late_min",
+          "versus": "audio",
+          "diff": -0.1640298507462687,
+          "diff_ci": [
+            -0.26865671641791045,
+            -0.06728370646766187
+          ]
+        },
+        {
+          "method": "late_min",
+          "versus": "video",
+          "diff": 0.012205952486090257,
+          "diff_ci": [
+            -0.007064677937277519,
+            0.04477611940298507
+          ]
+        }
+      ]
+    },
+    {
+      "fmr": 0.001,
+      "n_benign_videos": 76,
+      "n_benign_windows": 7698,
+      "n_events": 67,
+      "rows": [
+        {
+          "method": "audio",
+          "recall": 0.029787728026534,
+          "ci": [
+            0.008952511093182734,
+            0.13455951492537313
+          ]
+        },
+        {
+          "method": "video",
+          "recall": 0.00027194206482380995,
+          "ci": [
+            0.0,
+            0.0018260922740615895
+          ]
+        },
+        {
+          "method": "early",
+          "recall": 0.0,
+          "ci": [
+            0.0,
+            0.014925373134328358
+          ]
+        },
+        {
+          "method": "late_max",
+          "recall": 0.0012151112825999264,
+          "ci": [
+            0.00040435113488119156,
+            0.0061903041932051175
+          ]
+        },
+        {
+          "method": "late_sum",
+          "recall": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "method": "late_min",
+          "recall": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "paired": [
+        {
+          "method": "early",
+          "versus": "audio",
+          "diff": -0.029787728026534,
+          "diff_ci": [
+            -0.12592425373134328,
+            -0.008952511093182736
+          ]
+        },
+        {
+          "method": "early",
+          "versus": "video",
+          "diff": -0.00027194206482380995,
+          "diff_ci": [
+            -0.0013667440110372506,
+            0.011377515146709928
+          ]
+        },
+        {
+          "method": "late_max",
+          "versus": "audio",
+          "diff": -0.028572616743934073,
+          "diff_ci": [
+            -0.12479792966826937,
+            -0.008004694453826256
+          ]
+        },
+        {
+          "method": "late_max",
+          "versus": "video",
+          "diff": 0.0009431692177761164,
+          "diff_ci": [
+            0.0003130995239126538,
+            0.00425370169265381
+          ]
+        },
+        {
+          "method": "late_sum",
+          "versus": "audio",
+          "diff": -0.029787728026534,
+          "diff_ci": [
+            -0.1281212686567164,
+            -0.008952511093182736
+          ]
+        },
+        {
+          "method": "late_sum",
+          "versus": "video",
+          "diff": -0.00027194206482380995,
+          "diff_ci": [
+            -0.001519496820497296,
+            0.0
+          ]
+        },
+        {
+          "method": "late_min",
+          "versus": "audio",
+          "diff": -0.029787728026534,
+          "diff_ci": [
+            -0.13200335820895523,
+            -0.008952511093182736
+          ]
+        },
+        {
+          "method": "late_min",
+          "versus": "video",
+          "diff": -0.00027194206482380995,
+          "diff_ci": [
+            -0.0015806543714072898,
+            0.0
+          ]
+        }
+      ]
+    }
+  ],
+  "deployed": {
+    "rows": [
+      {
+        "method": "audio",
+        "fmr_target": 0.01,
+        "tau": 7.115311306954634,
+        "fmr_calib": 0.009181141439205955,
+        "fmr_check": 0.0,
+        "fmr_check_ci": [
+          0.0,
+          0.0
+        ],
+        "recall_event": 0.1044776119402985,
+        "recall_event_ci": [
+          0.04477611940298507,
+          0.1791044776119403
+        ],
+        "recall_window": 0.01878612716763006,
+        "n_events": 67,
+        "n_fm_windows": 0,
+        "n_fm_videos": 0,
+        "n_check_videos": 38
+      },
+      {
+        "method": "video",
+        "fmr_target": 0.01,
+        "tau": 8.213923595622745,
+        "fmr_calib": 0.0,
+        "fmr_check": 0.0,
+        "fmr_check_ci": [
+          0.0,
+          0.0
+        ],
+        "recall_event": 0.0,
+        "recall_event_ci": [
+          0.0,
+          0.0
+        ],
+        "recall_window": 0.0,
+        "n_events": 67,
+        "n_fm_windows": 0,
+        "n_fm_videos": 0,
+        "n_check_videos": 38
+      },
+      {
+        "method": "early",
+        "fmr_target": 0.01,
+        "tau": 0.867553174495697,
+        "fmr_calib": 0.009925558312655087,
+        "fmr_check": 0.0,
+        "fmr_check_ci": [
+          0.0,
+          0.0
+        ],
+        "recall_event": 0.0,
+        "recall_event_ci": [
+          0.0,
+          0.0
+        ],
+        "recall_window": 0.0,
+        "n_events": 67,
+        "n_fm_windows": 0,
+        "n_fm_videos": 0,
+        "n_check_videos": 38
+      },
+      {
+        "method": "late_max",
+        "fmr_target": 0.01,
+        "tau": 8.213923595622745,
+        "fmr_calib": 0.0,
+        "fmr_check": 0.0,
+        "fmr_check_ci": [
+          0.0,
+          0.0
+        ],
+        "recall_event": 0.0,
+        "recall_event_ci": [
+          0.0,
+          0.0
+        ],
+        "recall_window": 0.0,
+        "n_events": 67,
+        "n_fm_windows": 0,
+        "n_fm_videos": 0,
+        "n_check_videos": 38
+      },
+      {
+        "method": "late_sum",
+        "fmr_target": 0.01,
+        "tau": 14.818409278811387,
+        "fmr_calib": 0.009925558312655087,
+        "fmr_check": 0.0,
+        "fmr_check_ci": [
+          0.0,
+          0.0
+        ],
+        "recall_event": 0.0,
+        "recall_event_ci": [
+          0.0,
+          0.0
+        ],
+        "recall_window": 0.0,
+        "n_events": 67,
+        "n_fm_windows": 0,
+        "n_fm_videos": 0,
+        "n_check_videos": 38
+      },
+      {
+        "method": "late_min",
+        "fmr_target": 0.01,
+        "tau": 6.604485683188643,
+        "fmr_calib": 0.009925558312655087,
+        "fmr_check": 0.0,
+        "fmr_check_ci": [
+          0.0,
+          0.0
+        ],
+        "recall_event": 0.0,
+        "recall_event_ci": [
+          0.0,
+          0.0
+        ],
+        "recall_window": 0.0,
+        "n_events": 67,
+        "n_fm_windows": 0,
+        "n_fm_videos": 0,
+        "n_check_videos": 38
+      },
+      {
+        "method": "audio",
+        "fmr_target": 0.001,
+        "tau": 8.213923595622745,
+        "fmr_calib": 0.0,
+        "fmr_check": 0.0,
+        "fmr_check_ci": [
+          0.0,
+          0.0
+        ],
+        "recall_event": 0.0,
+        "recall_event_ci": [
+          0.0,
+          0.0
+        ],
+        "recall_window": 0.0,
+        "n_events": 67,
+        "n_fm_windows": 0,
+        "n_fm_videos": 0,
+        "n_check_videos": 38
+      },
+      {
+        "method": "video",
+        "fmr_target": 0.001,
+        "tau": 8.213923595622745,
+        "fmr_calib": 0.0,
+        "fmr_check": 0.0,
+        "fmr_check_ci": [
+          0.0,
+          0.0
+        ],
+        "recall_event": 0.0,
+        "recall_event_ci": [
+          0.0,
+          0.0
+        ],
+        "recall_window": 0.0,
+        "n_events": 67,
+        "n_fm_windows": 0,
+        "n_fm_videos": 0,
+        "n_check_videos": 38
+      },
+      {
+        "method": "early",
+        "fmr_target": 0.001,
+        "tau": 0.9001205563545227,
+        "fmr_calib": 0.0009925558312655087,
+        "fmr_check": 0.0,
+        "fmr_check_ci": [
+          0.0,
+          0.0
+        ],
+        "recall_event": 0.0,
+        "recall_event_ci": [
+          0.0,
+          0.0
+        ],
+        "recall_window": 0.0,
+        "n_events": 67,
+        "n_fm_windows": 0,
+        "n_fm_videos": 0,
+        "n_check_videos": 38
+      },
+      {
+        "method": "late_max",
+        "fmr_target": 0.001,
+        "tau": 8.213923595622745,
+        "fmr_calib": 0.0,
+        "fmr_check": 0.0,
+        "fmr_check_ci": [
+          0.0,
+          0.0
+        ],
+        "recall_event": 0.0,
+        "recall_event_ci": [
+          0.0,
+          0.0
+        ],
+        "recall_window": 0.0,
+        "n_events": 67,
+        "n_fm_windows": 0,
+        "n_fm_videos": 0,
+        "n_check_videos": 38
+      },
+      {
+        "method": "late_sum",
+        "fmr_target": 0.001,
+        "tau": 16.42784719124549,
+        "fmr_calib": 0.0,
+        "fmr_check": 0.0,
+        "fmr_check_ci": [
+          0.0,
+          0.0
+        ],
+        "recall_event": 0.0,
+        "recall_event_ci": [
+          0.0,
+          0.0
+        ],
+        "recall_window": 0.0,
+        "n_events": 67,
+        "n_fm_windows": 0,
+        "n_fm_videos": 0,
+        "n_check_videos": 38
+      },
+      {
+        "method": "late_min",
+        "fmr_target": 0.001,
+        "tau": 8.213923595622745,
+        "fmr_calib": 0.0,
+        "fmr_check": 0.0,
+        "fmr_check_ci": [
+          0.0,
+          0.0
+        ],
+        "recall_event": 0.0,
+        "recall_event_ci": [
+          0.0,
+          0.0
+        ],
+        "recall_window": 0.0,
+        "n_events": 67,
+        "n_fm_windows": 0,
+        "n_fm_videos": 0,
+        "n_check_videos": 38
+      }
+    ]
+  },
+  "agreement": [
+    {
+      "fmr_target": 0.01,
+      "tau_audio": 0.7945423722267151,
+      "tau_video": 0.9531818628311157,
+      "events": {
+        "both": 0,
+        "audio_only": 8,
+        "video_only": 0,
+        "neither": 59
+      },
+      "benign": {
+        "audio": 0.0,
+        "video": 0.0,
+        "both": 0.0,
+        "both_if_independent": 0.0,
+        "n_audio": 0,
+        "n_video": 0,
+        "n_both": 0,
+        "p_video_given_audio": NaN
+      }
+    },
+    {
+      "fmr_target": 0.001,
+      "tau_audio": 0.831379234790802,
+      "tau_video": 0.9598303437232971,
+      "events": {
+        "both": 0,
+        "audio_only": 2,
+        "video_only": 0,
+        "neither": 65
+      },
+      "benign": {
+        "audio": 0.0,
+        "video": 0.0,
+        "both": 0.0,
+        "both_if_independent": 0.0,
+        "n_audio": 0,
+        "n_video": 0,
+        "n_both": 0,
+        "p_video_given_audio": NaN
+      }
+    }
+  ],
+  "setters": {
+    "audio": {
+      "fmr": 0.01,
+      "top_windows": 40,
+      "videos_supplying": 5,
+      "calib_videos": 38,
+      "share_of_top_videos": 0.8,
+      "top": [
+        [
+          "v=4jVgDKbu_TI",
+          21
+        ],
+        [
+          "v=KERh4R2BbS0",
+          6
+        ],
+        [
+          "v=bU86SW6L7Tc",
+          5
+        ]
+      ]
+    },
+    "video": {
+      "fmr": 0.01,
+      "top_windows": 40,
+      "videos_supplying": 3,
+      "calib_videos": 38,
+      "share_of_top_videos": 1.0,
+      "top": [
+        [
+          "v=4jVgDKbu_TI",
+          38
+        ],
+        [
+          "v=KERh4R2BbS0",
+          1
+        ],
+        [
+          "v=-5RWxUUJ7lQ",
+          1
+        ]
+      ]
+    }
+  }
+}

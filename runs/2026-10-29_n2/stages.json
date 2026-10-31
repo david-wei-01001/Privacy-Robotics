@@ -1,0 +1,141 @@
+{
+  "data": {
+    "status": "ok",
+    "start": 1793293193.6220942,
+    "seconds": 20.6,
+    "windows": 32427,
+    "file": "/mnt/data2/u/davidwei/Privacy-Robotics/data/derived/windows_314f751759.csv"
+  },
+  "probe": {
+    "status": "ok",
+    "start": 1793293214.268085,
+    "seconds": 36.3,
+    "encoders": [
+      "mfcc_stats",
+      "vggish",
+      "hubert",
+      "ast",
+      "clap",
+      "clip_frames",
+      "motion_stats",
+      "videomae_k400",
+      "xclip_b32"
+    ]
+  },
+  "encoder:vggish": {
+    "status": "ok",
+    "start": 1793293250.6017244,
+    "seconds": 145.0,
+    "windows": 32427,
+    "coverage": 1.0,
+    "note": ""
+  },
+  "encoder:mfcc_stats": {
+    "status": "ok",
+    "start": 1793293395.5804074,
+    "seconds": 233.4,
+    "windows": 32427,
+    "coverage": 1.0,
+    "note": ""
+  },
+  "encoder:hubert": {
+    "status": "ok",
+    "start": 1793293629.0074496,
+    "seconds": 261.8,
+    "windows": 32427,
+    "coverage": 1.0,
+    "note": ""
+  },
+  "encoder:clip_frames": {
+    "status": "ok",
+    "start": 1793293890.769386,
+    "seconds": 77.3,
+    "windows": 12993,
+    "coverage": 1.0,
+    "note": ""
+  },
+  "encoder:clap": {
+    "status": "ok",
+    "start": 1793293968.0236797,
+    "seconds": 567.2,
+    "windows": 32427,
+    "coverage": 1.0,
+    "note": ""
+  },
+  "encoder:xclip_b32": {
+    "status": "ok",
+    "start": 1793294535.1895497,
+    "seconds": 330.6,
+    "windows": 12993,
+    "coverage": 1.0,
+    "note": ""
+  },
+  "encoder:motion_stats": {
+    "status": "ok",
+    "start": 1793294865.7763443,
+    "seconds": 439.9,
+    "windows": 12993,
+    "coverage": 1.0,
+    "note": ""
+  },
+  "encoder:ast": {
+    "status": "ok",
+    "start": 1793295305.6305273,
+    "seconds": 1129.0,
+    "windows": 32427,
+    "coverage": 1.0,
+    "note": ""
+  },
+  "encoder:videomae_k400": {
+    "status": "ok",
+    "start": 1793296434.6490464,
+    "seconds": 820.8,
+    "windows": 12993,
+    "coverage": 1.0,
+    "note": ""
+  },
+  "evaluate": {
+    "status": "ok",
+    "start": 1793297255.4438255,
+    "seconds": 44.3,
+    "runs": 1044
+  },
+  "datasets": {
+    "status": "ok",
+    "start": 1793297299.7239108,
+    "seconds": 0.6,
+    "encoder": "clap"
+  },
+  "apple_psi": {
+    "status": "ok",
+    "start": 1793297300.3643217,
+    "seconds": 453.2,
+    "xd": {
+      "ast": 1.0,
+      "clip_frames": 1.0,
+      "fusion:ast+clip_frames": 1.0
+    },
+    "encoder": "clap",
+    "lsh_run_id": "2026-10-29_n2-0217",
+    "k": 20,
+    "L": 32,
+    "m": 5,
+    "n_windows": 150,
+    "n_plain_positive": 65,
+    "n_items_X": 18134,
+    "cuckoo_dropped": 0,
+    "equivalence_rate": 1.0,
+    "n_disagree": 0,
+    "n_disagree_explained_by_drops": 0,
+    "voucher_bytes": 412,
+    "setup_s": 68.26,
+    "client_ms_per_voucher": 8.13,
+    "server_ms_per_voucher": 2.58,
+    "pdata_bytes": 1496146
+  },
+  "report": {
+    "status": "ok",
+    "start": 1793297753.6158361,
+    "seconds": 0.0
+  }
+}

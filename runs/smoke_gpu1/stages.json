@@ -1,0 +1,80 @@
+{
+  "data": {
+    "status": "ok",
+    "start": 1793221756.5023248,
+    "seconds": 2375.5,
+    "windows": 792,
+    "file": "/mnt/data2/u/davidwei/Privacy-Robotics/data/derived/windows_e28a580bf4.csv"
+  },
+  "probe": {
+    "status": "ok",
+    "start": 1793224131.9688592,
+    "seconds": 22.7,
+    "encoders": [
+      "mfcc_stats",
+      "vggish",
+      "hubert",
+      "ast",
+      "clap",
+      "clip_frames"
+    ]
+  },
+  "encoder:vggish": {
+    "status": "failed",
+    "start": 1793224154.6970217,
+    "seconds": 3.6,
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/mnt/data2/u/davidwei/Privacy-Robotics/data/cache/emb/e832a73a58_vggish-v1.npy'"
+  },
+  "encoder:clip_frames": {
+    "status": "failed",
+    "start": 1793224158.288397,
+    "seconds": 3.4,
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/mnt/data2/u/davidwei/Privacy-Robotics/data/cache/emb/e832a73a58_clip_frames-keyframes-v1.npy'"
+  },
+  "encoder:mfcc_stats": {
+    "status": "failed",
+    "start": 1793224161.6694992,
+    "seconds": 5.7,
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/mnt/data2/u/davidwei/Privacy-Robotics/data/cache/emb/e832a73a58_mfcc_stats-v1.npy'"
+  },
+  "encoder:hubert": {
+    "status": "failed",
+    "start": 1793224167.3251038,
+    "seconds": 6.3,
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/mnt/data2/u/davidwei/Privacy-Robotics/data/cache/emb/e832a73a58_hubert-L9-v1.npy'"
+  },
+  "encoder:clap": {
+    "status": "failed",
+    "start": 1793224173.6090615,
+    "seconds": 15.2,
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/mnt/data2/u/davidwei/Privacy-Robotics/data/cache/emb/e832a73a58_clap-v1.npy'"
+  },
+  "encoder:ast": {
+    "status": "failed",
+    "start": 1793224188.8166523,
+    "seconds": 27.5,
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/mnt/data2/u/davidwei/Privacy-Robotics/data/cache/emb/e832a73a58_ast-v1.npy'"
+  },
+  "evaluate": {
+    "status": "ok",
+    "start": 1793224216.31977,
+    "seconds": 0.0,
+    "runs": 0
+  },
+  "datasets": {
+    "status": "ok",
+    "start": 1793224216.3209167,
+    "seconds": 0.0,
+    "encoder": null
+  },
+  "apple_psi": {
+    "status": "ok",
+    "start": 1793224216.3217492,
+    "seconds": 0.0
+  },
+  "report": {
+    "status": "ok",
+    "start": 1793224216.3225498,
+    "seconds": 0.0
+  }
+}

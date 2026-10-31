@@ -1,0 +1,144 @@
+window_s: 4.8
+hop_s: 2.4
+xd:
+  locked_test_frac: 0.4
+  themes:
+  - fighting
+  - abuse
+  max_violent: 150
+  max_normal: 300
+sins:
+  archives:
+  - 1
+  - 2
+  max_files: 7000
+tv_mix:
+  n: 300
+  snr_db:
+  - -10
+  - 0
+encoders:
+- mfcc_stats
+- vggish
+- hubert
+- ast
+- clap
+- clip_frames
+- motion_stats
+- videomae_k400
+- xclip_b32
+matchers:
+- name: cosine_top1
+- name: cosine_top5
+- name: l2_raw
+- name: hamming_sign
+- name: logreg
+- name: lsh
+  k: 12
+  L: 16
+  seed: 0
+- name: lsh
+  k: 12
+  L: 16
+  seed: 1
+- name: lsh
+  k: 12
+  L: 16
+  seed: 2
+- name: lsh
+  k: 12
+  L: 32
+  seed: 0
+- name: lsh
+  k: 12
+  L: 32
+  seed: 1
+- name: lsh
+  k: 12
+  L: 32
+  seed: 2
+- name: lsh
+  k: 16
+  L: 16
+  seed: 0
+- name: lsh
+  k: 16
+  L: 16
+  seed: 1
+- name: lsh
+  k: 16
+  L: 16
+  seed: 2
+- name: lsh
+  k: 16
+  L: 32
+  seed: 0
+- name: lsh
+  k: 16
+  L: 32
+  seed: 1
+- name: lsh
+  k: 16
+  L: 32
+  seed: 2
+- name: lsh
+  k: 20
+  L: 16
+  seed: 0
+- name: lsh
+  k: 20
+  L: 16
+  seed: 1
+- name: lsh
+  k: 20
+  L: 16
+  seed: 2
+- name: lsh
+  k: 20
+  L: 32
+  seed: 0
+- name: lsh
+  k: 20
+  L: 32
+  seed: 1
+- name: lsh
+  k: 20
+  L: 32
+  seed: 2
+- name: lsh
+  k: 24
+  L: 16
+  seed: 0
+- name: lsh
+  k: 24
+  L: 16
+  seed: 1
+- name: lsh
+  k: 24
+  L: 16
+  seed: 2
+- name: lsh
+  k: 24
+  L: 32
+  seed: 0
+- name: lsh
+  k: 24
+  L: 32
+  seed: 1
+- name: lsh
+  k: 24
+  L: 32
+  seed: 2
+budget:
+  extract_s: 36000
+  probe_windows: 24
+  psi_windows: 150
+fusions:
+- - clap
+  - clip_frames
+- - ast
+  - clip_frames
+- - ast
+  - videomae_k400
+- - ast
+  - xclip_b32

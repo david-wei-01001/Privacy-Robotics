@@ -1,0 +1,195 @@
+==================================================================================================== 
+ast + clip_frames
+ matcher {'name': 'lsh', 'k': 16, 'L': 16, 'seed': 0}
+windows with both modalities: {'ref': 912, 'benign_train': 3691, 'calib': 4030, 'check': 3668, 'violent': 692, 'hard': 0, 'tv_sins': 0}
+
+MATCHED FMR 1.00% (measured on 76 benign videos, 7698 windows; 67 events):
+  audio     recall  56.8%  [ 39%, 68%]
+  video     recall  51.7%  [ 39%, 65%]
+  early     recall  28.2%  [ 15%, 56%]
+  late_max  recall  62.9%  [ 48%, 77%]
+  late_sum  recall  64.6%  [ 49%, 80%]
+  late_min  recall  68.7%  [ 55%, 78%]
+  early     minus audio -28.6%  [-41.9%,-6.4%]   <- CI excludes 0
+  early     minus video -23.5%  [-43.4%,+9.7%]
+  late_max  minus audio  +6.1%  [-5.8%,+19.9%]
+  late_max  minus video +11.2%  [-1.5%,+24.5%]
+  late_sum  minus audio  +7.8%  [-3.9%,+22.9%]
+  late_sum  minus video +12.9%  [-0.2%,+28.8%]
+  late_min  minus audio +11.8%  [-2.8%,+26.2%]
+  late_min  minus video +16.9%  [+2.3%,+28.3%]   <- CI excludes 0
+
+MATCHED FMR 0.10% (measured on 76 benign videos, 7698 windows; 67 events):
+  audio     recall  23.8%  [ 10%, 40%]
+  video     recall  14.5%  [  6%, 37%]
+  early     recall   8.8%  [  3%, 24%]
+  late_max  recall  21.3%  [  9%, 40%]
+  late_sum  recall  46.4%  [ 27%, 61%]
+  late_min  recall  44.6%  [ 33%, 59%]
+  early     minus audio -15.0%  [-28.2%,-1.0%]   <- CI excludes 0
+  early     minus video  -5.7%  [-28.6%,+9.6%]
+  late_max  minus audio  -2.5%  [-16.2%,+11.9%]
+  late_max  minus video  +6.8%  [-10.8%,+15.6%]
+  late_sum  minus audio +22.6%  [+1.0%,+38.6%]   <- CI excludes 0
+  late_sum  minus video +31.9%  [+14.1%,+42.3%]   <- CI excludes 0
+  late_min  minus audio +20.7%  [+5.4%,+37.7%]   <- CI excludes 0
+  late_min  minus video +30.0%  [+12.7%,+42.0%]   <- CI excludes 0
+
+DEPLOYED (threshold calibrated on val_calib, measured on val_check; not comparable across rows unless the
+measured FMRs are):
+  method     target  measured  FM wins/vids  recall  95% CI
+  audio       1.00%    0.109%      4/4  of 38   37.3%  [25%,49%]
+  video       1.00%    0.654%     24/7  of 38   44.8%  [33%,55%]
+  early       1.00%    0.000%      0/0  of 38   16.4%  [9%,25%]
+  late_max    1.00%    0.763%     28/9  of 38   58.2%  [46%,69%]
+  late_sum    1.00%    0.627%     23/7  of 38   59.7%  [48%,72%]
+  late_min    1.00%    0.436%     16/4  of 38   61.2%  [49%,73%]
+  audio       0.10%    0.027%      1/1  of 38   19.4%  [9%,30%]
+  video       0.10%    0.136%      5/2  of 38   14.9%  [7%,24%]
+  early       0.10%    0.000%      0/0  of 38    3.0%  [0%,7%]
+  late_max    0.10%    0.027%      1/1  of 38   11.9%  [4%,19%]
+  late_sum    0.10%    0.082%      3/1  of 38   43.3%  [31%,55%]
+  late_min    0.10%    0.027%      1/1  of 38   40.3%  [28%,52%]
+
+WHICH BENIGN CALIBRATION VIDEOS SET THE THRESHOLD (top windows at the first FMR target):
+  audio : the top 40 windows come from 8 of 38 videos; the top 3 supply 70%  [('v=4jVgDKbu_TI', 18), ('v=KERh4R2BbS0', 5), ('v=-5RWxUUJ7lQ', 5)]
+  video : the top 40 windows come from 8 of 38 videos; the top 3 supply 57%  [('Tropa.de.Elite.2.2010', 10), ('Salt.2010', 8), ('wangted.2008', 5)]
+
+AGREEMENT at FMR target 1.00% (each modality at its own calibrated threshold):
+  violent events: both 16, audio only 9, video only 14, neither 28
+  benign false-matching windows: audio 4, video 24, both 0  (rates 0.109% / 0.654% / 0.000%; independent would give 0.001%)
+
+AGREEMENT at FMR target 0.10% (each modality at its own calibrated threshold):
+  violent events: both 3, audio only 10, video only 7, neither 47
+  benign false-matching windows: audio 1, video 5, both 0  (rates 0.027% / 0.136% / 0.000%; independent would give 0.000%) 
+
+==================================================================================================== 
+ast + clip_frames
+ matcher {'name': 'lsh', 'k': 16, 'L': 16, 'seed': 1}
+windows with both modalities: {'ref': 912, 'benign_train': 3691, 'calib': 4030, 'check': 3668, 'violent': 692, 'hard': 0, 'tv_sins': 0}
+
+MATCHED FMR 1.00% (measured on 76 benign videos, 7698 windows; 67 events):
+  audio     recall  29.8%  [ 14%, 53%]
+  video     recall  45.7%  [ 29%, 60%]
+  early     recall  33.5%  [ 18%, 58%]
+  late_max  recall  38.2%  [ 24%, 62%]
+  late_sum  recall  46.3%  [ 31%, 69%]
+  late_min  recall  47.5%  [ 33%, 67%]
+  early     minus audio  +3.7%  [-11.2%,+19.4%]
+  early     minus video -12.2%  [-26.3%,+10.5%]
+  late_max  minus audio  +8.5%  [+2.5%,+16.6%]   <- CI excludes 0
+  late_max  minus video  -7.4%  [-19.5%,+12.4%]
+  late_sum  minus audio +16.5%  [+7.0%,+28.3%]   <- CI excludes 0
+  late_sum  minus video  +0.6%  [-8.6%,+17.1%]
+  late_min  minus audio +17.7%  [+3.0%,+30.9%]   <- CI excludes 0
+  late_min  minus video  +1.8%  [-6.8%,+13.8%]
+
+MATCHED FMR 0.10% (measured on 76 benign videos, 7698 windows; 67 events):
+  audio     recall   6.6%  [  1%, 17%]
+  video     recall  29.3%  [ 16%, 40%]
+  early     recall  13.0%  [  6%, 23%]
+  late_max  recall  22.6%  [  4%, 32%]
+  late_sum  recall  23.9%  [ 12%, 48%]
+  late_min  recall  20.5%  [ 11%, 47%]
+  early     minus audio  +6.3%  [-3.8%,+15.6%]
+  early     minus video -16.4%  [-28.3%,+0.6%]
+  late_max  minus audio +15.9%  [+1.7%,+22.3%]   <- CI excludes 0
+  late_max  minus video  -6.8%  [-27.6%,+4.8%]
+  late_sum  minus audio +17.3%  [+7.0%,+36.1%]   <- CI excludes 0
+  late_sum  minus video  -5.5%  [-17.2%,+19.4%]
+  late_min  minus audio +13.9%  [+5.0%,+35.3%]   <- CI excludes 0
+  late_min  minus video  -8.8%  [-18.4%,+19.4%]
+
+DEPLOYED (threshold calibrated on val_calib, measured on val_check; not comparable across rows unless the
+measured FMRs are):
+  method     target  measured  FM wins/vids  recall  95% CI
+  audio       1.00%    0.000%      0/0  of 38    6.0%  [1%,12%]
+  video       1.00%    0.136%      5/1  of 38   29.9%  [19%,39%]
+  early       1.00%    0.055%      2/1  of 38   14.9%  [7%,24%]
+  late_max    1.00%    0.000%      0/0  of 38   22.4%  [13%,31%]
+  late_sum    1.00%    0.000%      0/0  of 38   40.3%  [30%,52%]
+  late_min    1.00%    0.055%      2/2  of 38   43.3%  [31%,54%]
+  audio       0.10%    0.000%      0/0  of 38    0.0%  [0%,0%]
+  video       0.10%    0.136%      5/1  of 38   29.9%  [19%,39%]
+  early       0.10%    0.027%      1/1  of 38    9.0%  [3%,16%]
+  late_max    0.10%    0.000%      0/0  of 38    0.0%  [0%,0%]
+  late_sum    0.10%    0.000%      0/0  of 38   23.9%  [13%,34%]
+  late_min    0.10%    0.000%      0/0  of 38   13.4%  [6%,21%]
+
+WHICH BENIGN CALIBRATION VIDEOS SET THE THRESHOLD (top windows at the first FMR target):
+  audio : the top 40 windows come from 5 of 38 videos; the top 3 supply 88%  [('v=4jVgDKbu_TI', 22), ('v=HTEyaXBPf9U', 8), ('v=-5RWxUUJ7lQ', 5)]
+  video : the top 40 windows come from 7 of 38 videos; the top 3 supply 82%  [('v=4jVgDKbu_TI', 19), ('v=-5RWxUUJ7lQ', 8), ('Tropa.de.Elite.2.2010', 6)]
+
+AGREEMENT at FMR target 1.00% (each modality at its own calibrated threshold):
+  violent events: both 5, audio only 5, video only 15, neither 42
+  benign false-matching windows: audio 0, video 5, both 0  (rates 0.000% / 0.136% / 0.000%; independent would give 0.000%)
+
+AGREEMENT at FMR target 0.10% (each modality at its own calibrated threshold):
+  violent events: both 0, audio only 2, video only 20, neither 45
+  benign false-matching windows: audio 0, video 5, both 0  (rates 0.000% / 0.136% / 0.000%; independent would give 0.000%) 
+
+==================================================================================================== 
+ast + clip_frames
+ matcher {'name': 'cosine_top1'}
+windows with both modalities: {'ref': 912, 'benign_train': 3691, 'calib': 4030, 'check': 3668, 'violent': 692, 'hard': 0, 'tv_sins': 0}
+
+MATCHED FMR 1.00% (measured on 76 benign videos, 7698 windows; 67 events):
+  audio     recall  17.9%  [  7%, 31%]
+  video     recall   1.2%  [  0%,  5%]
+  early     recall   0.0%  [  0%, 10%]
+  late_max  recall   2.8%  [  1%, 12%]
+  late_sum  recall   1.5%  [  0%, 10%]
+  late_min  recall   1.5%  [  0%, 13%]
+  early     minus audio -17.9%  [-26.5%,-6.0%]   <- CI excludes 0
+  early     minus video  -1.2%  [-2.8%,+7.0%]
+  late_max  minus audio -15.1%  [-23.4%,-4.7%]   <- CI excludes 0
+  late_max  minus video  +1.6%  [+0.5%,+6.2%]   <- CI excludes 0
+  late_sum  minus audio -16.4%  [-25.4%,-4.5%]   <- CI excludes 0
+  late_sum  minus video  +0.3%  [-1.9%,+7.2%]
+  late_min  minus audio -16.4%  [-24.5%,-4.2%]   <- CI excludes 0
+  late_min  minus video  +0.3%  [-1.7%,+9.6%]
+
+MATCHED FMR 0.10% (measured on 76 benign videos, 7698 windows; 67 events):
+  audio     recall   3.0%  [  1%, 13%]
+  video     recall   0.1%  [  0%,  1%]
+  early     recall   0.0%  [  0%,  0%]
+  late_max  recall   0.3%  [  0%,  1%]
+  late_sum  recall   0.0%  [  0%,  1%]
+  late_min  recall   0.0%  [  0%,  0%]
+  early     minus audio  -3.0%  [-12.8%,-0.9%]   <- CI excludes 0
+  early     minus video  -0.1%  [-0.5%,-0.0%]   <- CI excludes 0
+  late_max  minus audio  -2.7%  [-12.2%,-0.7%]   <- CI excludes 0
+  late_max  minus video  +0.2%  [+0.1%,+0.7%]   <- CI excludes 0
+  late_sum  minus audio  -3.0%  [-12.2%,-0.9%]   <- CI excludes 0
+  late_sum  minus video  -0.1%  [-0.4%,+1.0%]
+  late_min  minus audio  -3.0%  [-12.8%,-0.9%]   <- CI excludes 0
+  late_min  minus video  -0.1%  [-0.5%,-0.0%]   <- CI excludes 0
+
+DEPLOYED (threshold calibrated on val_calib, measured on val_check; not comparable across rows unless the
+measured FMRs are):
+  method     target  measured  FM wins/vids  recall  95% CI
+  audio       1.00%    0.000%      0/0  of 38   10.4%  [4%,18%]
+  video       1.00%    0.000%      0/0  of 38    0.0%  [0%,0%]
+  early       1.00%    0.000%      0/0  of 38    0.0%  [0%,0%]
+  late_max    1.00%    0.000%      0/0  of 38    0.0%  [0%,0%]
+  late_sum    1.00%    0.027%      1/1  of 38    0.0%  [0%,0%]
+  late_min    1.00%    0.000%      0/0  of 38    0.0%  [0%,0%]
+  audio       0.10%    0.000%      0/0  of 38    0.0%  [0%,0%]
+  video       0.10%    0.000%      0/0  of 38    0.0%  [0%,0%]
+  early       0.10%    0.000%      0/0  of 38    0.0%  [0%,0%]
+  late_max    0.10%    0.000%      0/0  of 38    0.0%  [0%,0%]
+  late_sum    0.10%    0.000%      0/0  of 38    0.0%  [0%,0%]
+  late_min    0.10%    0.000%      0/0  of 38    0.0%  [0%,0%]
+
+WHICH BENIGN CALIBRATION VIDEOS SET THE THRESHOLD (top windows at the first FMR target):
+  audio : the top 40 windows come from 5 of 38 videos; the top 3 supply 80%  [('v=4jVgDKbu_TI', 21), ('v=KERh4R2BbS0', 6), ('v=bU86SW6L7Tc', 5)]
+  video : the top 40 windows come from 3 of 38 videos; the top 3 supply 100%  [('v=4jVgDKbu_TI', 30), ('v=KERh4R2BbS0', 6), ('v=HTEyaXBPf9U', 4)]
+
+AGREEMENT at FMR target 1.00% (each modality at its own calibrated threshold):
+  violent events: both 0, audio only 8, video only 2, neither 57
+  benign false-matching windows: audio 0, video 3, both 0  (rates 0.000% / 0.082% / 0.000%; independent would give 0.000%)
+
+AGREEMENT at FMR target 0.10% (each modality at its own calibrated threshold):
+  violent events: both 0, audio only 2, video only 2, neither 63
+  benign false-matching windows: audio 0, video 0, both 0  (rates 0.000% / 0.000% / 0.000%; independent would give 0.000%) 
+
